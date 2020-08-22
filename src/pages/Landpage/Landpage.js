@@ -7,11 +7,11 @@ import {
   Row,
   Image,
   Card,
-  Button
+  Button,
 } from "react-bootstrap";
-import { FaGithub,FaYoutube,FaSpotify,FaSlackHash } from "react-icons/fa";
+import { FaGithub, FaYoutube, FaSpotify, FaSlackHash,FaLock,FaLinux,FaFingerprint,FaPaperPlane,FaMapMarkedAlt,FaLayerGroup,FaStepForward,FaSortAmountUp} from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Twitter from "../../Components/TwitterComponent/Twitter"
+import Twitter from "../../Components/TwitterComponent/Twitter";
 import "./Landpage.scss";
 //   import screen from './images/screen.png'
 
@@ -21,11 +21,11 @@ export default class Landpage extends Component {
 
     this.listener = null;
     this.state = {
-      status: "top"
+      status: "top",
     };
   }
   componentDidMount() {
-    this.listener = document.addEventListener("scroll", e => {
+    this.listener = document.addEventListener("scroll", (e) => {
       var scrolled = document.scrollingElement.scrollTop;
       if (scrolled >= 120) {
         if (this.state.status !== "notop") {
@@ -41,19 +41,18 @@ export default class Landpage extends Component {
   componentDidUpdate() {
     document.removeEventListener("scroll", this.listener);
   }
-
-
-  // onScroll = () => {
-  //   const scrollY = window.scrollY 
-  //   const scrollTop = this.myRef.current.scrollTop
-  // }
-
   render() {
+
+    
     return (
       <div className="Landpage">
         {/* Top Navigation Bar  */}
-        <Navbar  style={{
-          backgroundColor: this.state.status === "top" ? "" : "white"}} className="navbar navbar-expand-lg navbar-light sticky-top flex-md-nowrap pl-5 ">
+        <Navbar
+          style={{
+            backgroundColor: this.state.status === "top" ? "" : "white",
+          }}
+          className="navbar navbar-expand-lg navbar-light sticky-top flex-md-nowrap pl-5 "
+        >
           <div class="navbar-brand col-md-3 col-lg-2" href="#">
             <strong>x</strong>migrate
           </div>
@@ -73,9 +72,9 @@ export default class Landpage extends Component {
           </ul>
           <form class="form-inline my-2 my-lg-0 pr-5 rightli">
             <ul class="navbar-nav">
-              <li class="pr-5 ">Docs</li>
-              <li class="pr-5 ">Blog</li>
-              <li class="pr-5 ">Github</li>
+              <li class="pr-5 ">Home</li>
+              <li class="pr-5 ">Features</li>
+              <li class="pr-5 ">Commuinity</li>
             </ul>
           </form>
         </Navbar>
@@ -83,11 +82,11 @@ export default class Landpage extends Component {
           <Row className="justify-content-md-center">
             <Col md="auto" className="banner pt-5">
               <h1 className="banner-txt">
-                An Opensource Cross Cloud Migration Tool
+                An Open-source Cross Cloud Migration Tool
               </h1>
               <p className="lead">
-                Xmigrate enables your IT team to plan and move your infrastructrure, network, subnet, VM's {" "}
-                <br />
+                Xmigrate enables your IT team to plan and move your
+                infrastructrure, network, subnet, VM's <br />
                 across cloud and onprem to cloud easily!
               </p>
               <Link className="btn btn-primary btn-md mr-1 " to="/home">
@@ -111,30 +110,33 @@ export default class Landpage extends Component {
                 Xmigrate now supports all 3 favourite public cloud providers
               </h1>
               <p class="lead">
-                We are rigourosly testing and rolling out updates to our Xmigrate tool every week.
+                We are rigourosly testing and rolling out updates to our
+                Xmigrate tool every week.
                 <br />
-                Xmigrate team invite everyone to give this tool a try and give feedback. 
+                Xmigrate team invite everyone to give this tool a try and give
+                feedback.
                 <br />
-                We are inviting each one of your contribution to build this tool to a stable version.
+                We are inviting each one of your contribution to build this tool
+                to a stable version.
               </p>
             </Col>
           </Row>
           <Row className="justify-content-md-center">
             <Col md="8" className="banner pt-5">
               <Row>
-                <Col md="3">
+                <Col md="4">
                   <Image
                     src="Assets/images/Google_Cloud_Platform-Logo.wine.png"
                     fluid
                   />
                 </Col>
-                <Col md="3">
+                <Col md="4">
                   <Image
                     src="Assets/images/Amazon_Web_Services-Logo.wine.png"
                     fluid
                   />
                 </Col>
-                <Col md="3">
+                <Col md="4">
                   <Image
                     src="Assets/images/Microsoft_Azure-Logo.wine.png"
                     fluid
@@ -145,74 +147,106 @@ export default class Landpage extends Component {
           </Row>
 
           <Row className="HomeColo p-5 justify-content-md-center">
-            <Col md="8">
+            <Col >
               <Row>
-                <Col md="6">
+                <Col >
                   <Row>
                     <Col>
                       <h3 className="banner-txt2">
-                        Cross-Migrate using
-                        <br />
-                        Xmigrate 😀
+                        Cross-Migrate using Xmigrate <span role="img" aria-label="Happy">😀</span>
                       </h3>
                       <p class="lead">
-                        The following are the features of Xmigrate tool now and will be rolled out in future.
+                        The following are the features of Xmigrate tool now and
+                        will be rolled out in future.
                       </p>
                     </Col>
                   </Row>
                   <Row>
-                  <Col>
+                    <Col class="featureClass" >
+                    <div  style={{color: '#1da1f2'}} class="p-3">
+                    <FaLock size={40} />
+                    </div>
                       <h6 className="banner-txt3">Data Privacy</h6>
                       <p class="lead">
-                        Xmigrate tool will be deployed in your environment and no data is send to any third party for any purpose
+                        Xmigrate tool will be deployed in your environment and
+                        no data is send to any third party for any purpose
                       </p>
                     </Col>
-                    <Col>
+                    <Col class="featureClass">
+                    <div  style={{color: '#1da1f2'}} class="p-3">
+                    <FaLinux size={40} />
+                    </div>
                       <h6 className="banner-txt3">Migration of Linux VM's</h6>
                       <p class="lead">
-                        Xmigrate has the capability to migrate Linux VM's from onprem to cloud or cloud to cloud
+                        Xmigrate has the capability to migrate Linux VM's from
+                        onprem to cloud or cloud to cloud
                       </p>
                     </Col>
-                    <Col>
+                    <Col class="featureClass" >
+                    <div  style={{color: '#1da1f2'}} class="p-3">
+                    <FaPaperPlane size={40} />
+                    </div>
                       <h6 className="banner-txt3">Agentless Migration</h6>
                       <p className="lead">
-                        Xmigrate doesn't need any agents to be installed on the VM's which needs to be migrated
+                        Xmigrate doesn't need any agents to be installed on the
+                        VM's which needs to be migrated
                       </p>
                     </Col>
-                  </Row>
-                  <Row>
-                    <Col>
+                    <Col class="featureClass" >
+                    <div  style={{color: '#1da1f2'}} class="p-3">
+                    <FaFingerprint size={40} />
+                    </div>
                       <h6 className="banner-txt3">Environment Footprinting</h6>
                       <p class="lead">
-                        Efficiently discover the environment of the hosts which needs to be migrated
+                        Efficiently discover the environment of the hosts which
+                        needs to be migrated
                       </p>
                     </Col>
-                    <Col>
+                    </Row>
+                    <Row>
+                    <Col class="featureClass" >
+                    <div  style={{color: '#1da1f2'}} class="p-3">
+                    <FaMapMarkedAlt size={40} />
+                    </div>
                       <h6 className="banner-txt3">Blueprint Dashboard</h6>
                       <p className="lead">
-                        Design the Cloud environment easily from Blueprint console with footprint data
+                        Design the Cloud environment easily from Blueprint
+                        console with footprint data
                       </p>
                     </Col>
-                    <Col>
-                      <h6 className="banner-txt3">Manage multiple environments</h6>
+                    <Col class="featureClass" >
+                    <div  style={{color: '#1da1f2'}} class="p-3">
+                    <FaLayerGroup size={40} />
+                    </div>
+                      <h6 className="banner-txt3">
+                        Manage multiple environments
+                      </h6>
                       <p className="lead">
-                        Create and manage multiple environments by creating multiple projects in Xmigrate
+                        Create and manage multiple environments by creating
+                        multiple projects in Xmigrate
                       </p>
                     </Col>
-                    <Col>
+                    <Col class="featureClass" >
+                    <div  style={{color: '#1da1f2'}} class="p-3">
+                    <FaStepForward size={40} />
+                    </div>
                       <h6 className="banner-txt3">VM to container migration</h6>
-                      <p className="lead">
-                        Migrate your VM's to containers
-                      </p>
+                      <p className="lead">Migrate your VM's to containers</p>
+                    </Col>
+                    <Col class="featureClass" >
+                    <div  style={{color: '#1da1f2'}} class="p-3">
+                    <FaSortAmountUp size={40} />
+                    </div>
+                      <h6 className="banner-txt3">Bandwidth Control</h6>
+                      <p className="lead">Control bandwidth usage whilw you are migrating your servers</p>
                     </Col>
                   </Row>
                 </Col>
-                
               </Row>
-            </Col>
+            </Col>  
           </Row>
 
-        <Twitter/>
+          <Twitter />
           {/* Community */}
           <div className="HomeColo justify-content-md-center p-5">
             <Row>
@@ -228,45 +262,93 @@ export default class Landpage extends Component {
               </Col>
             </Row>
             <Row className="justify-content-md-center">
-              <Col md="auto" >
-                <Card style={{ width: "10rem" }} className="shadow border-light px-3">
-                  <Card.Body className="iconcard"><FaSlackHash size={50}/>Slack</Card.Body>
+              <Col md="auto">
+                <Card
+                  style={{ width: "10rem" }}
+                  className="shadow border-light px-3"
+                >
+                  <Card.Body className="iconcard">
+                    <FaSlackHash size={50} />
+                    Slack
+                  </Card.Body>
                 </Card>
-                <Button className="mt-3 txtbtn"variant="outline-primary" size="md" block>JOIN SLACK</Button>
+                <a href="https://xmigrate.slack.com">
+                <Button
+                  className="mt-3 txtbtn"
+                  variant="outline-primary"
+                  size="md"
+                  block
+                >
+                  JOIN SLACK
+                </Button>
+                </a>
               </Col>
-              <Col md="auto" >
-             
-                <Card style={{ width: "10rem" }} className="shadow border-light px-3">
-                  <Card.Body className="iconcard"><FaYoutube size={50}/>Youtube</Card.Body>
-                 
+              <Col md="auto">
+                <Card
+                  style={{ width: "10rem" }}
+                  className="shadow border-light px-3"
+                >
+                  <Card.Body className="iconcard">
+                    <FaYoutube size={50} />
+                    Youtube
+                  </Card.Body>
                 </Card>
-                <Button className="mt-3 txtbtn"variant="outline-primary" size="md" block>VISIT YOUTUBE</Button>
+                <Button
+                  className="mt-3 txtbtn"
+                  variant="outline-primary"
+                  size="md"
+                  block
+                >
+                  VISIT YOUTUBE
+                </Button>
               </Col>
-        
-              <Col md="auto" >
-             
-             <Card style={{ width: "10rem" }} className="shadow border-light px-3">
-               <Card.Body className="iconcard"><FaGithub size={50}/>Github</Card.Body>
-              
-             </Card>
-             <Button className="mt-3 txtbtn"variant="outline-primary" size="md" block>VISIT GITHUB</Button>
-           </Col>
-           <Col md="auto" >
-             
-             <Card style={{ width: "10rem" }} className="shadow border-light px-3">
-               <Card.Body className="iconcard"><FaSpotify size={50}/>Spotify</Card.Body>
-              
-             </Card>
-             <Button className="mt-3 txtbtn"variant="outline-primary" size="md" block>VISIT SPOTIFY</Button>
-           </Col>
-          
+
+              <Col md="auto">
+                <Card
+                  style={{ width: "10rem" }}
+                  className="shadow border-light px-3"
+                >
+                  <Card.Body className="iconcard">
+                    <FaGithub size={50} />
+                    Github
+                  </Card.Body>
+                </Card>
+                <a href="https://github.com/xmigrate/xmigrate.cloud">
+                <Button
+                  className="mt-3 txtbtn"
+                  variant="outline-primary"
+                  size="md"
+                  block
+                
+                >
+                VISIT GITHUB 
+                </Button></a> 
+              </Col>
+              <Col md="auto">
+                <Card
+                  style={{ width: "10rem" }}
+                  className="shadow border-light px-3"
+                >
+                  <Card.Body className="iconcard">
+                    <FaSpotify size={50} />
+                    Spotify
+                  </Card.Body>
+                </Card>
+                <Button
+                  className="mt-3 txtbtn"
+                  variant="outline-primary"
+                  size="md"
+                  block
+                >
+                  VISIT SPOTIFY
+                </Button>
+              </Col>
             </Row>
             <Row className="justify-content-md-center">
-             
               <Col md="auto" className="banner pt-5">
                 <p class="lead">
-                 You can also join us every other week for our community meeting call to dicuss <strong>xmigrate</strong>
-                
+                  You can also join us every other week for our community
+                  meeting call to dicuss <strong>xmigrate</strong>
                 </p>
               </Col>
             </Row>
@@ -282,12 +364,12 @@ export default class Landpage extends Component {
               <hr />
               <Row>
                 <ul className="footer-list lead">
-                  <li>Terms</li>
-                  <li>promo</li>
+                  <li>Home</li>
+                  <li>Features</li>
                   <li>Download</li>
-                  <li>News</li>
+                  <li>Community</li>
                 </ul>
-              </Row>
+              </Row>  
             </Col>
           </Row>
         </Container>

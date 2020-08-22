@@ -73,9 +73,9 @@ export default class Landpage extends Component {
           </ul>
           <form class="form-inline my-2 my-lg-0 pr-5 rightli">
             <ul class="navbar-nav">
-              <li class="pr-5 ">Documentation</li>
+              <li class="pr-5 ">Docs</li>
               <li class="pr-5 ">Blog</li>
-              <li class="pr-5 ">Get Started on Github</li>
+              <li class="pr-5 ">Github</li>
             </ul>
           </form>
         </Navbar>
@@ -83,16 +83,15 @@ export default class Landpage extends Component {
           <Row className="justify-content-md-center">
             <Col md="auto" className="banner pt-5">
               <h1 className="banner-txt">
-                Embracing The Open <br />
-                Source Migrate
+                An Opensource Cross Cloud Migration Tool
               </h1>
               <p className="lead">
-                In efforts to expand our horizons,we welcom every investment-med{" "}
+                Xmigrate enables your IT team to plan and move your infrastructrure, network, subnet, VM's {" "}
                 <br />
-                individual to join us in the Condotel Inverstment Opportunity
+                across cloud and onprem to cloud easily!
               </p>
               <Link className="btn btn-primary btn-md mr-1 " to="/home">
-                Start Migrateing
+                Try now
               </Link>
               <Link className="btn btn-outline-primary btn-md " to="/home">
                 Get Demo
@@ -109,14 +108,14 @@ export default class Landpage extends Component {
           <Row className="justify-content-md-center">
             <Col md="auto" className="banner pt-5">
               <h1 className="banner-txt2">
-                Our community supports flavours of infrastructure
+                Xmigrate now supports all 3 favourite public cloud providers
               </h1>
               <p class="lead">
-                The following on creating a direct mail advertising campaign
-                have been
+                We are rigourosly testing and rolling out updates to our Xmigrate tool every week.
                 <br />
-                street-tested and will bring you huge money returns in a short
-                period of time
+                Xmigrate team invite everyone to give this tool a try and give feedback. 
+                <br />
+                We are inviting each one of your contribution to build this tool to a stable version.
               </p>
             </Col>
           </Row>
@@ -141,9 +140,6 @@ export default class Landpage extends Component {
                     fluid
                   />
                 </Col>
-                <Col md="3">
-                  <Image src="Assets/images/Red_Hat-Logo.wine.png" fluid />
-                </Col>
               </Row>
             </Col>
           </Row>
@@ -155,93 +151,63 @@ export default class Landpage extends Component {
                   <Row>
                     <Col>
                       <h3 className="banner-txt2">
-                        Multiformat Video Player
+                        Cross-Migrate using
                         <br />
-                        For Your Device Migrate
+                        Xmigrate 😀
                       </h3>
                       <p class="lead">
-                        The following on creating a direct mail advertising
-                        campaign have been street-tested and will bring you huge
-                        money returns in a short period of time
+                        The following are the features of Xmigrate tool now and will be rolled out in future.
+                      </p>
+                    </Col>
+                  </Row>
+                  <Row>
+                  <Col>
+                      <h6 className="banner-txt3">Data Privacy</h6>
+                      <p class="lead">
+                        Xmigrate tool will be deployed in your environment and no data is send to any third party for any purpose
+                      </p>
+                    </Col>
+                    <Col>
+                      <h6 className="banner-txt3">Migration of Linux VM's</h6>
+                      <p class="lead">
+                        Xmigrate has the capability to migrate Linux VM's from onprem to cloud or cloud to cloud
+                      </p>
+                    </Col>
+                    <Col>
+                      <h6 className="banner-txt3">Agentless Migration</h6>
+                      <p className="lead">
+                        Xmigrate doesn't need any agents to be installed on the VM's which needs to be migrated
                       </p>
                     </Col>
                   </Row>
                   <Row>
                     <Col>
-                      <h6 className="banner-txt3">Photograph a Protest</h6>
+                      <h6 className="banner-txt3">Environment Footprinting</h6>
                       <p class="lead">
-                        The following on creating a direct mail advertising
-                        campaign have been
+                        Efficiently discover the environment of the hosts which needs to be migrated
                       </p>
                     </Col>
                     <Col>
-                      <h6 className="banner-txt3">Photograph a Protest</h6>
+                      <h6 className="banner-txt3">Blueprint Dashboard</h6>
                       <p className="lead">
-                        The following on creating a direct mail advertising
-                        campaign have been
-                      </p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col>
-                      <h6 className="banner-txt3">Photograph a Protest</h6>
-                      <p class="lead">
-                        The following on creating a direct mail advertising
-                        campaign have been
+                        Design the Cloud environment easily from Blueprint console with footprint data
                       </p>
                     </Col>
                     <Col>
-                      <h6 className="banner-txt3">Photograph a Protest</h6>
+                      <h6 className="banner-txt3">Manage multiple environments</h6>
                       <p className="lead">
-                        The following on creating a direct mail advertising
-                        campaign have been
+                        Create and manage multiple environments by creating multiple projects in Xmigrate
+                      </p>
+                    </Col>
+                    <Col>
+                      <h6 className="banner-txt3">VM to container migration</h6>
+                      <p className="lead">
+                        Migrate your VM's to containers
                       </p>
                     </Col>
                   </Row>
                 </Col>
-                <Col md="6">
-                  <div
-                    id="carouselExampleIndicators"
-                    class="carousel slide"
-                    data-ride="carousel"
-                  >
-                    <ol class="carousel-indicators">
-                      <li
-                        data-target="#carouselExampleIndicators"
-                        data-slide-to="0"
-                        class="active"
-                      ></li>
-                      <li
-                        data-target="#carouselExampleIndicators"
-                        data-slide-to="1"
-                      ></li>
-                      <li
-                        data-target="#carouselExampleIndicators"
-                        data-slide-to="2"
-                      ></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <Image
-                          className="d-block w-100"
-                          src="Assets/images/wal.jpeg"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <Image
-                          className="d-block w-100"
-                          src="Assets/images/wal.jpeg"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <Image
-                          className="d-block w-100"
-                          src="Assets/images/wal.jpeg"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </Col>
+                
               </Row>
             </Col>
           </Row>
@@ -257,7 +223,7 @@ export default class Landpage extends Component {
                 <p className="lead">
                   Join the conversation and help shape the evolution of
                   <br />
-                  Crossplane.Here are fews ways to get started
+                  Xmigrate, Here are fews ways to get started
                 </p>
               </Col>
             </Row>

@@ -72,13 +72,13 @@ export default class Landpage extends Component {
           </ul>
           <form class="form-inline my-2 my-lg-0 pr-5 rightli">
             <ul class="navbar-nav">
-              <li class="pr-5 ">Home</li>
-              <li class="pr-5 ">Features</li>
-              <li class="pr-5 ">Commuinity</li>
+              <li class="pr-5 "><a href="#Home">Home</a></li>
+              <li class="pr-5 "><a href="#feature">Features</a></li>
+              <li class="pr-5 "><a href="#Community">Community</a></li>
             </ul>
           </form>
         </Navbar>
-        <Container fluid>
+        <Container id="Home" fluid>
           <Row className="justify-content-md-center">
             <Col md="auto" className="banner pt-5">
               <h1 className="banner-txt">
@@ -121,7 +121,7 @@ export default class Landpage extends Component {
               </p>
             </Col>
           </Row>
-          <Row className="justify-content-md-center">
+          <Row  className="justify-content-md-center">
             <Col md="8" className="banner pt-5">
               <Row>
                 <Col md="4">
@@ -146,7 +146,7 @@ export default class Landpage extends Component {
             </Col>
           </Row>
 
-          <Row className="HomeColo p-5 justify-content-md-center">
+          <Row id="feature" className="HomeColo p-5 justify-content-md-center">
             <Col >
               <Row>
                 <Col >
@@ -248,7 +248,7 @@ export default class Landpage extends Component {
 
           <Twitter />
           {/* Community */}
-          <div className="HomeColo justify-content-md-center p-5">
+          <div id="Community" className="HomeColo justify-content-md-center p-5">
             <Row>
               <Col md="12" className="banner pt-5">
                 <h1 className="banner-txt2">

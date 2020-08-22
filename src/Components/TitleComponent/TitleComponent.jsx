@@ -3,7 +3,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const TitleComponent = () => {
-    var Title = 'Bluethroat';
+    var Title = 'Xmigrate';
     return (
         <Helmet>
             <title>{ Title }</title>

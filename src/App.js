@@ -10,20 +10,14 @@ import {
 
 function App() {
   return (
-   
+
     <div className="App h-100">
- <TitleComponent />
+      <TitleComponent />
       <Router>
-
-
         <Switch>
           <Route path="/" component={Landpage} />
-         
         </Switch>
-
       </Router>
-
-
     </div>
   );
 }

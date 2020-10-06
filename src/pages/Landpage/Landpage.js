@@ -85,15 +85,14 @@ export default class Landpage extends Component {
                 An Open-source Cross Cloud Migration Tool
               </h1>
               <p className="lead">
-                Xmigrate enables your IT team to plan and move your
-                infrastructrure, network, subnet, VM's <br />
-                across cloud and onprem to cloud easily!
+              Xmigrate(pronounced as cross-migrate) is an opensource tool for migrating your VM's <br />
+              from anywhere to cloud and cloud to anywhere seemlesly.
               </p>
               <Link className="btn btn-primary btn-md mr-1 " to="/home">
                 Try now
               </Link>
               <Link className="btn btn-outline-primary btn-md " to="/home">
-                Get Demo
+                Watch Demo
               </Link>
             </Col>
           </Row>
@@ -107,7 +106,7 @@ export default class Landpage extends Component {
           <Row className="justify-content-md-center">
             <Col md="auto" className="banner pt-5">
               <h1 className="banner-txt2">
-                Xmigrate now supports all 3 favourite public cloud providers
+                Xmigrate will soon supports all 3 major public cloud providers
               </h1>
               <p class="lead">
                 We are rigourosly testing and rolling out updates to our
@@ -156,8 +155,8 @@ export default class Landpage extends Component {
                         Cross-Migrate using Xmigrate <span role="img" aria-label="Happy">😀</span>
                       </h3>
                       <p class="lead">
-                        The following are the features of Xmigrate tool now and
-                        will be rolled out in future.
+                        The following are the features and advantages of Xmigrate tool now and
+                        will be rolled out in future. 
                       </p>
                     </Col>
                   </Row>
@@ -238,7 +237,7 @@ export default class Landpage extends Component {
                     <FaSortAmountUp size={40} />
                     </div>
                       <h6 className="banner-txt3">Bandwidth Control</h6>
-                      <p className="lead">Control bandwidth usage whilw you are migrating your servers</p>
+                      <p className="lead">Control bandwidth usage while you are migrating your servers</p>
                     </Col>
                   </Row>
                 </Col>
@@ -246,7 +245,7 @@ export default class Landpage extends Component {
             </Col>  
           </Row>
 
-          <Twitter />
+         
           {/* Community */}
           <div id="Community" className="HomeColo justify-content-md-center p-5">
             <Row>

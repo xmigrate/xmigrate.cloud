@@ -11,7 +11,7 @@ import {
 } from "react-bootstrap";
 import { FaGithub, FaYoutube, FaSpotify, FaSlackHash,FaLock,FaLinux,FaFingerprint,FaPaperPlane,FaMapMarkedAlt,FaLayerGroup,FaStepForward,FaSortAmountUp} from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Twitter from "../../Components/TwitterComponent/Twitter";
+//import Twitter from "../../Components/TwitterComponent/Twitter";
 import "./Landpage.scss";
 //   import screen from './images/screen.png'
 

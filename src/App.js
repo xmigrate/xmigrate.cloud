@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Landpage from './pages/Landpage/Landpage'
-import { TitleComponent } from './Components/TitleComponent/TitleComponent';
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,7 +11,6 @@ function App() {
   return (
 
     <div className="App h-100">
-      <TitleComponent />
       <Router>
         <Switch>
           <Route path="/" component={Landpage} />

@@ -152,11 +152,11 @@ export default class Landpage extends Component {
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
-                        <div  className="p-3">
+                        <div  className="clicon p-3">
                           <FaLock size={50} />
                         </div>
                         <Card.Title>Data Privacy</Card.Title>
-                        <Card.Text>
+                        <Card.Text className="lead">
                           Xmigrate tool will be deployed in your environment and
                           no data is send to any third party for any purpose
                         </Card.Text>
@@ -167,11 +167,11 @@ export default class Landpage extends Component {
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
-                        <div  className="p-3">
+                        <div  className=" clicon p-3">
                           <FaLinux size={50} />
                         </div>
                         <Card.Title>Migration of Linux VM's</Card.Title>
-                        <Card.Text>
+                        <Card.Text className="lead">
                           Xmigrate has the capability to migrate Linux VM's from
                           onprem to cloud or cloud to cloud
                         </Card.Text>
@@ -183,11 +183,11 @@ export default class Landpage extends Component {
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
-                        <div  className="p-3">
+                        <div  className="clicon p-3">
                           <FaPaperPlane size={50} />
                         </div>
                         <Card.Title>Agentless Migration</Card.Title>
-                        <Card.Text>
+                        <Card.Text className="lead">
                           Xmigrate doesn't need any agents to be installed on
                           the VM's which needs to be migrated
                         </Card.Text>
@@ -199,11 +199,11 @@ export default class Landpage extends Component {
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
-                        <div  className="p-3">
+                        <div  className="clicon p-3">
                           <FaFingerprint size={50} />
                         </div>
                         <Card.Title>Environment Footprinting</Card.Title>
-                        <Card.Text>
+                        <Card.Text className="lead" >
                           Efficiently discover the environment of the hosts
                           which needs to be migrated
                         </Card.Text>
@@ -216,11 +216,11 @@ export default class Landpage extends Component {
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
-                        <div  className="p-3">
+                        <div  className="clicon p-3">
                           <FaMapMarkedAlt size={50} />
                         </div>
                         <Card.Title>Blueprint Dashboard</Card.Title>
-                        <Card.Text>
+                        <Card.Text className="lead">
                           Design the Cloud environment easily from Blueprint
                           console with footprint data
                         </Card.Text>
@@ -232,11 +232,11 @@ export default class Landpage extends Component {
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
-                        <div className="p-3">
+                        <div className="clicon p-3">
                           <FaLayerGroup size={50} />
                         </div>
                         <Card.Title>Manage environments</Card.Title>
-                        <Card.Text>
+                        <Card.Text className="lead">
                           Create and manage multiple environments by creating
                           multiple projects in Xmigrate
                         </Card.Text>
@@ -248,11 +248,11 @@ export default class Landpage extends Component {
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
-                        <div  className="p-3">
+                        <div  className="clicon p-3">
                           <FaStepForward size={50} />
                         </div>
                         <Card.Title>VM to container migration</Card.Title>
-                        <Card.Text>Manage your VM's to containers</Card.Text>
+                        <Card.Text className="lead">Manage your VM's to containers</Card.Text>
                       </Card.Body>
                     </Card>
 
@@ -261,11 +261,11 @@ export default class Landpage extends Component {
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
-                        <div  className="p-3">
+                        <div  className="clicon p-3">
                           <FaSortAmountUp size={50} />
                         </div>
                         <Card.Title>Bandwidth Control</Card.Title>
-                        <Card.Text>
+                        <Card.Text className="lead">
                           Control bandwidth usage while you are migrating your
                           servers
                         </Card.Text>

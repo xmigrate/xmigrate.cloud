@@ -31,10 +31,10 @@ export default class Landpage extends Component {
     return (
       <div className="Landpage">
         {/* Top Navigation Bar  */}
-        <Navbar bg="light" expand="lg" className="sticky-top ">
+        <Navbar expand="lg" className="sticky-top NavCl">
           <Navbar.Brand className="navbar-brand col-md-2 mt-3">
             <img
-              src="Assets/images/logoSm.jpg"
+              src="Assets/images/logoSm.png"
               width="150"
               height="40"
               className="d-inline-block align-top"
@@ -48,15 +48,15 @@ export default class Landpage extends Component {
           >
             <Form inline id="basic-nav-dropdown">
               <ul className="navbar-nav">
-                <li className="pr-5 ">
+                <li className="mr-5 ">
                   <a href="#Home">Documentation</a>
                 </li>
-                <li className="pr-5 ">
+                <li className="mr-5 ">
                   <a href="#feature">Blog</a>
                 </li>
               </ul>
               <a href="#Community">
-                <Button variant="secondary Gitbtn">
+                <Button variant="secondary Gitbtn mr-5 ">
                   Get Started on Github <FaGithub size={20} />
                 </Button>
               </a>
@@ -96,7 +96,7 @@ export default class Landpage extends Component {
               </h1>
               <p className="lead">
                 We are rigourosly testing and rolling out updates to our
-                Xmigrate tool every week. Xmigrate team invite everyone to{" "}
+                Xmigrate tool every week. Xmigrate team invite everyone to
                 <br /> give this tool a try and give feedback. We are inviting
                 each one of your contribution to build this tool to a stable
                 version.
@@ -104,7 +104,7 @@ export default class Landpage extends Component {
             </Col>
           </Row>
           <Row className="justify-content-md-center">
-            <Col md="6" className="banner pt-5">
+            <Col md="6" className="banner mb-2">
               <Row>
                 <Col md="4">
                   <Image
@@ -148,14 +148,14 @@ export default class Landpage extends Component {
                   </Row>
                   <Row className="justify-content-md-center">
                     <Card
-                      style={{ width: "20rem" }}
+                      style={{ width: "18rem" }}
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className="clicon p-3">
                           <FaLock size={50} />
                         </div>
-                        <Card.Title>Data Privacy</Card.Title>
+                        <Card.Title className="CardTit">Data Privacy</Card.Title>
                         <Card.Text className="lead">
                           Xmigrate tool will be deployed in your environment and
                           no data is send to any third party for any purpose
@@ -163,14 +163,14 @@ export default class Landpage extends Component {
                       </Card.Body>
                     </Card>
                     <Card
-                      style={{ width: "20rem" }}
+                      style={{ width: "18rem" }}
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className=" clicon p-3">
                           <FaLinux size={50} />
                         </div>
-                        <Card.Title>Migration of Linux VM's</Card.Title>
+                        <Card.Title className="CardTit">Migration of Linux VM's</Card.Title>
                         <Card.Text className="lead">
                           Xmigrate has the capability to migrate Linux VM's from
                           onprem to cloud or cloud to cloud
@@ -179,14 +179,14 @@ export default class Landpage extends Component {
                     </Card>
 
                     <Card
-                      style={{ width: "20rem" }}
+                      style={{ width: "18rem" }}
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className="clicon p-3">
                           <FaPaperPlane size={50} />
                         </div>
-                        <Card.Title>Agentless Migration</Card.Title>
+                        <Card.Title className="CardTit">Agentless Migration</Card.Title>
                         <Card.Text className="lead">
                           Xmigrate doesn't need any agents to be installed on
                           the VM's which needs to be migrated
@@ -195,14 +195,14 @@ export default class Landpage extends Component {
                     </Card>
 
                     <Card
-                      style={{ width: "20rem" }}
+                      style={{ width: "18rem" }}
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className="clicon p-3">
                           <FaFingerprint size={50} />
                         </div>
-                        <Card.Title>Environment Footprinting</Card.Title>
+                        <Card.Title className="CardTit">Environment Footprinting</Card.Title>
                         <Card.Text className="lead" >
                           Efficiently discover the environment of the hosts
                           which needs to be migrated
@@ -212,14 +212,14 @@ export default class Landpage extends Component {
                   </Row>
                   <Row className="justify-content-md-center">
                     <Card
-                      style={{ width: "20rem" }}
+                      style={{ width: "18rem" }}
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className="clicon p-3">
                           <FaMapMarkedAlt size={50} />
                         </div>
-                        <Card.Title>Blueprint Dashboard</Card.Title>
+                        <Card.Title className="CardTit">Blueprint Dashboard</Card.Title>
                         <Card.Text className="lead">
                           Design the Cloud environment easily from Blueprint
                           console with footprint data
@@ -228,14 +228,14 @@ export default class Landpage extends Component {
                     </Card>
 
                     <Card
-                      style={{ width: "20rem" }}
+                      style={{ width: "18rem" }}
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div className="clicon p-3">
                           <FaLayerGroup size={50} />
                         </div>
-                        <Card.Title>Manage environments</Card.Title>
+                        <Card.Title className="CardTit">Manage environments</Card.Title>
                         <Card.Text className="lead">
                           Create and manage multiple environments by creating
                           multiple projects in Xmigrate
@@ -244,27 +244,27 @@ export default class Landpage extends Component {
                     </Card>
 
                     <Card
-                      style={{ width: "20rem" }}
+                      style={{ width: "18rem" }}
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className="clicon p-3">
                           <FaStepForward size={50} />
                         </div>
-                        <Card.Title>VM to container migration</Card.Title>
+                        <Card.Title className="CardTit">VM to container migration</Card.Title>
                         <Card.Text className="lead">Manage your VM's to containers</Card.Text>
                       </Card.Body>
                     </Card>
 
                     <Card
-                      style={{ width: "20rem" }}
+                      style={{ width: "18rem" }}
                       className="shadow border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className="clicon p-3">
                           <FaSortAmountUp size={50} />
                         </div>
-                        <Card.Title>Bandwidth Control</Card.Title>
+                        <Card.Title className="CardTit">Bandwidth Control</Card.Title>
                         <Card.Text className="lead">
                           Control bandwidth usage while you are migrating your
                           servers
@@ -344,7 +344,7 @@ export default class Landpage extends Component {
                 <Col>
                   <p className="footer-brand pt-3">
                     <img
-                      src="Assets/images/logoSm.jpg"
+                      src="Assets/images/logoSm.png"
                       width="150"
                       height="40"
                       className="d-inline-block align-top"

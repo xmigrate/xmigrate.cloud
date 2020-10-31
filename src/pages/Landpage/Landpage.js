@@ -12,7 +12,6 @@ import {
 import {
   FaGithub,
   FaYoutube,
-  FaSpotify,
   FaSlackHash,
   FaLock,
   FaLinux,
@@ -22,6 +21,7 @@ import {
   FaLayerGroup,
   FaStepForward,
   FaSortAmountUp,
+  FaMedium
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Landpage.scss";
@@ -32,7 +32,7 @@ export default class Landpage extends Component {
       <div className="Landpage">
         {/* Top Navigation Bar  */}
         <Navbar expand="lg" className="sticky-top NavCl">
-          <Navbar.Brand className="navbar-brand col-md-2 mt-3">
+          <Navbar.Brand className="navbar-brand col-xs-2 ml-5 mt-3">
             <img
               src="Assets/images/logoSm.png"
               width="150"
@@ -288,13 +288,15 @@ export default class Landpage extends Component {
                 </p>
               </Col>
             </Row>
-            <Row className="justify-content-md-center pt-4 pb-3">
-              <Col md="auto pr-5 iconCommunity">
+            <Row className="justify-content-ls-center pt-4 pb-3 ">
+              <Col md={{ span: 4, offset: 4 }}>
+                <Row>
+              <Col xs="3" className=" iconCommunity ">
                 <a href="https://xmigrate.slack.com" target="_blank">
                   <FaSlackHash size={60} />
                 </a>
               </Col>
-              <Col md="auto pr-5 iconCommunity">
+              <Col xs="3" className=" iconCommunity">
                 <a
                   href="https://github.com/xmigrate/xmigrate.cloud"
                   target="_blank"
@@ -302,7 +304,7 @@ export default class Landpage extends Component {
                   <FaYoutube size={60} />
                 </a>
               </Col>
-              <Col md="auto pr-5 iconCommunity">
+              <Col xs="3" className=" iconCommunity">
                 <a
                   href="https://github.com/xmigrate/xmigrate.cloud"
                   target="_blank"
@@ -310,17 +312,19 @@ export default class Landpage extends Component {
                   <FaGithub size={60} />
                 </a>
               </Col>
-              <Col md="auto pr-5 iconCommunity">
+              <Col xs="3" className="iconCommunity">
                 <a
                   href="https://github.com/xmigrate/xmigrate.cloud"
                   target="_blank"
                 >
-                  <FaSpotify size={60} />
+                  <FaMedium size={60} />
                 </a>
               </Col>
+              </Row>
+              </Col>
             </Row>
-            <Row className="justify-content-md-center">
-              <Col md="auto" className="banner pt-3">
+            <Row >
+              <Col md="12" className="banner pt-3">
                 <p className="lead">
                   You can also join us every other week for our community
                   meeting call to dicuss <strong>xmigrate</strong>
@@ -351,7 +355,7 @@ export default class Landpage extends Component {
                   </p>
                 </Col>
                 <Col xs={{ order: "last" }} >
-                  <p className="pt-3 lead">2020 @ xmigrate labs inc.</p>
+                  <p className="pt-3 lead"> &#169; 2020@xmigrate.cloud</p>
                 </Col>
               </Row>
             </Col>

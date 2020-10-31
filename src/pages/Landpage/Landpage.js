@@ -74,10 +74,10 @@ export default class Landpage extends Component {
                 migrating your VM's <br />
                 from anywhere to cloud and cloud to anywhere seemlesly.
               </p>
-              <Link className="btn btn-primary btn-md mr-1 " to="/home">
+              <Link className="btn btn-primary btn-md mr-1 px-4" to="/home">
                 Start Migrate
               </Link>
-              <Link className="btn btn-outline-primary btn-md " to="/home">
+              <Link className="btn btn-outline-primary btn-md px-4" to="/home">
                 Get a Demo
               </Link>
             </Col>
@@ -103,24 +103,24 @@ export default class Landpage extends Component {
               </p>
             </Col>
           </Row>
-          <Row className="justify-content-md-center">
-            <Col md="6" className="banner mb-2">
+          <Row className="justify-content-md-center mt-4">
+            <Col md="6" className="banner pb-3 mb-5">
               <Row>
                 <Col md="4">
                   <Image
-                    src="Assets/images/Google_Cloud_Platform-Logo.wine.png"
+                    src="Assets/images/Cloud.png"
                     fluid
                   />
                 </Col>
                 <Col md="4">
                   <Image
-                    src="Assets/images/Amazon_Web_Services-Logo.wine.png"
+                    src="Assets/images/aws.png"
                     fluid
                   />
                 </Col>
                 <Col md="4">
                   <Image
-                    src="Assets/images/Microsoft_Azure-Logo.wine.png"
+                    src="Assets/images/Azure.png"
                     fluid
                   />
                 </Col>
@@ -130,10 +130,9 @@ export default class Landpage extends Component {
 
           <Row id="feature" className="HomeColo p-5 justify-content-md-center">
             <Col>
-              <Row>
-                <Col>
-                  <Row>
-                    <Col>
+             
+                  <Row className="justify-content-md-center">
+                    <Col md="auto" className="banner pt-5">
                       <h3 className="banner-txt2">
                         Cross-Migrate using Xmigrate{" "}
                         <span role="img" aria-label="Happy">
@@ -149,7 +148,7 @@ export default class Landpage extends Component {
                   <Row className="justify-content-md-center">
                     <Card
                       style={{ width: "18rem" }}
-                      className="shadow border-light p-3 m-3"
+                      className=" border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className="clicon p-3">
@@ -164,7 +163,7 @@ export default class Landpage extends Component {
                     </Card>
                     <Card
                       style={{ width: "18rem" }}
-                      className="shadow border-light p-3 m-3"
+                      className=" border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className=" clicon p-3">
@@ -180,7 +179,7 @@ export default class Landpage extends Component {
 
                     <Card
                       style={{ width: "18rem" }}
-                      className="shadow border-light p-3 m-3"
+                      className=" border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className="clicon p-3">
@@ -196,7 +195,7 @@ export default class Landpage extends Component {
 
                     <Card
                       style={{ width: "18rem" }}
-                      className="shadow border-light p-3 m-3"
+                      className=" border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className="clicon p-3">
@@ -213,7 +212,7 @@ export default class Landpage extends Component {
                   <Row className="justify-content-md-center">
                     <Card
                       style={{ width: "18rem" }}
-                      className="shadow border-light p-3 m-3"
+                      className=" border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className="clicon p-3">
@@ -229,7 +228,7 @@ export default class Landpage extends Component {
 
                     <Card
                       style={{ width: "18rem" }}
-                      className="shadow border-light p-3 m-3"
+                      className=" border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div className="clicon p-3">
@@ -245,7 +244,7 @@ export default class Landpage extends Component {
 
                     <Card
                       style={{ width: "18rem" }}
-                      className="shadow border-light p-3 m-3"
+                      className=" border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className="clicon p-3">
@@ -258,7 +257,7 @@ export default class Landpage extends Component {
 
                     <Card
                       style={{ width: "18rem" }}
-                      className="shadow border-light p-3 m-3"
+                      className=" border-light p-3 m-3"
                     >
                       <Card.Body className="iconcard">
                         <div  className="clicon p-3">
@@ -272,8 +271,7 @@ export default class Landpage extends Component {
                       </Card.Body>
                     </Card>
                   </Row>
-                </Col>
-              </Row>
+             
             </Col>
           </Row>
 
@@ -290,7 +288,7 @@ export default class Landpage extends Component {
                 </p>
               </Col>
             </Row>
-            <Row className="justify-content-md-center py-5">
+            <Row className="justify-content-md-center pt-4 pb-3">
               <Col md="auto pr-5 iconCommunity">
                 <a href="https://xmigrate.slack.com" target="_blank">
                   <FaSlackHash size={60} />
@@ -322,7 +320,7 @@ export default class Landpage extends Component {
               </Col>
             </Row>
             <Row className="justify-content-md-center">
-              <Col md="auto" className="banner pt-5">
+              <Col md="auto" className="banner pt-3">
                 <p className="lead">
                   You can also join us every other week for our community
                   meeting call to dicuss <strong>xmigrate</strong>
@@ -341,7 +339,7 @@ export default class Landpage extends Component {
                     <li>Community</li>
                   </ul>
                 </Col>
-                <Col>
+                <Col >
                   <p className="footer-brand pt-3">
                     <img
                       src="Assets/images/logoSm.png"
@@ -352,8 +350,8 @@ export default class Landpage extends Component {
                     />
                   </p>
                 </Col>
-                <Col xs={{ order: "last" }}>
-                  <p className="pt-3 lead">@2020 ,xmigrate labs inc.</p>
+                <Col xs={{ order: "last" }} >
+                  <p className="pt-3 lead">2020 @ xmigrate labs inc.</p>
                 </Col>
               </Row>
             </Col>

@@ -12,6 +12,7 @@ import {
 import {
   FaGithub,
   FaYoutube,
+  FaTwitter,
   FaSlackHash,
   FaLock,
   FaLinux,
@@ -78,7 +79,7 @@ export default class Landpage extends Component {
                 Start Migrate
               </Link>
               <Link className="btn btn-outline-primary btn-md px-4" to="/home">
-                View a Demo
+                View Demo
               </Link>
             </Col>
           </Row>
@@ -292,8 +293,8 @@ export default class Landpage extends Component {
               <Col md={{ span: 4, offset: 4 }}>
                 <Row>
               <Col xs="3" className=" iconCommunity ">
-                <a href="https://join.slack.com/t/xmigrate/shared_invite/zt-khowk4j8-xCIXX60xvRCODBk276aeDg" target="_blank">
-                  <FaSlackHash size={60} />
+                <a href="https://twitter.com/xmigrate_cloud" target="_blank">
+                  <FaTwitter size={60} />
                 </a>
               </Col>
               <Col xs="3" className=" iconCommunity">

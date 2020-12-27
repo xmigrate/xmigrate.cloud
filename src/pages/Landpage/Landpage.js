@@ -50,13 +50,13 @@ export default class Landpage extends Component {
             <Form inline id="basic-nav-dropdown">
               <ul className="navbar-nav">
                 <li className="mr-5 ">
-                  <a href="#Home">Documentation</a>
+                  <a href="https://medium.com/xmigrateoss" target="_blank">Documentation</a>
                 </li>
                 <li className="mr-5 ">
-                  <a href="#feature">Blog</a>
+                  <a href="https://medium.com/xmigrateoss" target="_blank">Blog</a>
                 </li>
               </ul>
-              <a href="#Community">
+              <a href="https://github.com/iamvishnuks/xmigrate/discussions" target="_blank">
                 <Button variant="secondary Gitbtn mr-5 ">
                   Get Started on Github <FaGithub size={20} />
                 </Button>
@@ -315,7 +315,7 @@ export default class Landpage extends Component {
               </Col>
               <Col xs="3" className="iconCommunity">
                 <a
-                  href=" https://medium.com/xmigrateoss"
+                  href="https://medium.com/xmigrateoss"
                   target="_blank"
                 >
                   <FaMedium size={60} />

@@ -293,7 +293,7 @@ export default class Landpage extends Component {
               <Col md={{ span: 4, offset: 4 }}>
                 <Row>
               <Col xs="3" className=" iconCommunity ">
-                <a href="https://twitter.com/xmigrate_cloud" target="_blank">
+                <a href="https://twitter.com/xmigrateOSS" target="_blank">
                   <FaTwitter size={60} />
                 </a>
               </Col>
@@ -315,7 +315,7 @@ export default class Landpage extends Component {
               </Col>
               <Col xs="3" className="iconCommunity">
                 <a
-                  href=" https://medium.com/xmigrate"
+                  href=" https://medium.com/xmigrateoss"
                   target="_blank"
                 >
                   <FaMedium size={60} />

@@ -78,7 +78,7 @@ export default class Landpage extends Component {
                 Start Migrate
               </Link>
               <Link className="btn btn-outline-primary btn-md px-4" to="/home">
-                Get a Demo
+                View a Demo
               </Link>
             </Col>
           </Row>
@@ -292,13 +292,13 @@ export default class Landpage extends Component {
               <Col md={{ span: 4, offset: 4 }}>
                 <Row>
               <Col xs="3" className=" iconCommunity ">
-                <a href="https://xmigrate.slack.com" target="_blank">
+                <a href="https://join.slack.com/t/xmigrate/shared_invite/zt-khowk4j8-xCIXX60xvRCODBk276aeDg" target="_blank">
                   <FaSlackHash size={60} />
                 </a>
               </Col>
               <Col xs="3" className=" iconCommunity">
                 <a
-                  href="https://github.com/xmigrate/xmigrate.cloud"
+                  href="https://www.youtube.com/channel/UCJc96kOu0tNhDtp7FT91ENg"
                   target="_blank"
                 >
                   <FaYoutube size={60} />
@@ -306,7 +306,7 @@ export default class Landpage extends Component {
               </Col>
               <Col xs="3" className=" iconCommunity">
                 <a
-                  href="https://github.com/xmigrate/xmigrate.cloud"
+                  href="https://github.com/iamvishnuks/xmigrate/discussions"
                   target="_blank"
                 >
                   <FaGithub size={60} />
@@ -314,7 +314,7 @@ export default class Landpage extends Component {
               </Col>
               <Col xs="3" className="iconCommunity">
                 <a
-                  href="https://github.com/xmigrate/xmigrate.cloud"
+                  href=" https://medium.com/xmigrate"
                   target="_blank"
                 >
                   <FaMedium size={60} />

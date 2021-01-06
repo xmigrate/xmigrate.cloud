@@ -75,23 +75,25 @@ export default class Landpage extends Component {
                 migrating your VM's <br />
                 from anywhere to cloud and cloud to anywhere seemlesly.
               </p>
-              <div className="btn btn-primary btn-md btn-main mr-1 px-4" >
               <a
-              className="text-light"
                   href="https://github.com/iamvishnuks/xmigrate"
                   target="_blank"
                 >
+              <div className="btn bt-pr1 btn-outline-primary btn-md btn-main mr-1 px-4" >
+           
                 Start Migrate
-            </a></div>
-              <div className="btn btn-outline-primary btn-md px-4" >
-              <a
-              className="text-primary"
+         </div>
+         </a>
+         <a
                   href="https://youtu.be/FISJaoUIiOM"
                   target="_blank"
                 >
+              <div className="btn bt-pr2 btn-outline-primary btn-md px-4" >
+           
                 View Demo
-                </a>
+          
               </div>
+              </a>
             </Col>
           </Row>
           <Row className="justify-content-md-center">

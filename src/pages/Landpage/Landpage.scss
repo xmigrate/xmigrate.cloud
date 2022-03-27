@@ -1,122 +1,120 @@
-.Landpage{
-    h1,
-    h6 {
-      font-family: 'Ubuntu', sans-serif;
-      font-style: normal;
-      font-size: 30px;
-    }
-    h1,
-    h5 {
-      font-weight: normal;
-    }
-    .NavCl{
-      background-color: white;
-    }
-    .CardTit{
-      font-family: 'Ubuntu', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 1.1rem;
-    }
-    .navbar-nav > li > a{
-      color: #666666;
-      font-family: 'Ubuntu', sans-serif;
-      font-weight: 500;
-    }
-    a:hover {
-      text-decoration: none;
-    }
-    .banner{
-      text-align: center;
-    }
-    .btn{
-    font-family: 'Ubuntu', sans-serif;
+.Landpage {
+  h1,
+  h6 {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-size: 30px;
+  }
+  h1,
+  h5 {
+    font-weight: normal;
+  }
+  .NavCl {
+    background-color: white;
+  }
+  .CardTit {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+  }
+  .navbar-nav > li > a {
+    color: #666666;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .banner {
+    text-align: center;
+  }
+  .btn {
+    font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     font-weight: 500;
-    }
-    .bt-pr1{
-      color: white;
-      background-color: #0082FF;
-    }
-    .bt-pr1:hover{
-      color: #0082FF;
-      background-color: white;
-    }
-    .bt-pr2{
-      color: #0082FF;
-      background-color: white;
-      
-    }
-    .bt-pr2:hover{
-      color: white;
-      background-color: #0082FF;
-    }
-    .Gitbtn{
-      background-color: #3E3F42;
-      font-family: 'Ubuntu', sans-serif;
-    }
-    .banner-txt{
-      font-family: 'Ubuntu', sans-serif;
+  }
+  .bt-pr1 {
+    color: white;
+    background-color: #0082ff;
+  }
+  .bt-pr1:hover {
+    color: #0082ff;
+    background-color: white;
+  }
+  .bt-pr2 {
+    color: #0082ff;
+    background-color: white;
+  }
+  .bt-pr2:hover {
+    color: white;
+    background-color: #0082ff;
+  }
+  .Gitbtn {
+    background-color: #3e3f42;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .banner-txt {
+    font-family: "Ubuntu", sans-serif;
     font-weight: lighter;
     font-size: 2.5rem;
-    }
-    .lead{
-      font-family: 'Ubuntu', sans-serif;
+  }
+  .lead {
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-size: 1rem;
     color: #999;
-    }
-    .boxshad {
-      box-shadow: 20px 20px 50px #dfdede;
-    }
-    .card{
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
-    }
-    .banner-txt2{
-      font-family: Ubuntu;
-      font-weight: lighter;
-      font-size: 2.3rem;
-      }
-    .HomeColo{
-      background-color: #F9F9F9;
-    }
+  }
+  .boxshad {
+    box-shadow: 20px 20px 50px #dfdede;
+  }
+  .card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  }
+  .banner-txt2 {
+    font-family: Ubuntu;
+    font-weight: lighter;
+    font-size: 2.3rem;
+  }
+  .HomeColo {
+    background-color: #f9f9f9;
+  }
 
-    .footer-brand{
+  .footer-brand {
     font-size: 1.4rem;
-    color: #0082FF !important;
-    }
-   
-    ul.footer-list > li{
-      display: inline;
-      margin: 1rem;
-    }
-    .iconcard{
-      text-align: center;
+    color: #0082ff !important;
+  }
 
-    }
+  ul.footer-list > li {
+    display: inline;
+    margin: 1rem;
+  }
+  .iconcard {
+    text-align: center;
+  }
 
-    .footer{
-      border-top: .3px solid lightgray;
-    }
-    .iconCommunity a{
-      color: grey;
-    }
-    .iconCommunity a:hover{
-      color: #0082FF;
-      cursor: pointer;
-    }
-    .clicon{
-      color: #0082FF;
-    }
-    .premium-change{
-      border-style: solid;
-      border-width: 2px;
-      border-color: #0082FF;;
-    }
-    .btn-premium{
-      font-weight: 500;
-font-size: 12px;
-line-height: 14px;
-border-radius: 100px;
-    }
+  .footer {
+    border-top: 0.3px solid lightgray;
+  }
+  .iconCommunity a {
+    color: grey;
+  }
+  .iconCommunity a:hover {
+    color: #0082ff;
+    cursor: pointer;
+  }
+  .clicon {
+    color: #0082ff;
+  }
+  .premium-change {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0082ff;
+  }
+  .btn-premium {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 100px;
+  }
 }

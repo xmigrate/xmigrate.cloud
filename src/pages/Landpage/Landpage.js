@@ -47,7 +47,7 @@ export default class Landpage extends Component {
             className="justify-content-end "
             id="basic-navbar-nav"
           >
-            <Form inline id="basic-nav-dropdown">
+            <Form id="basic-nav-dropdown" className="d-flex">
               <ul className="navbar-nav">
                 <li className="mr-5 ">
                   <a href="https://medium.com/xmigrateoss" target="_blank">Documentation</a>
@@ -76,23 +76,23 @@ export default class Landpage extends Component {
                 from anywhere to cloud and cloud to anywhere seemlesly.
               </p>
               <a
-                  href="https://github.com/iamvishnuks/xmigrate"
-                  target="_blank"
-                >
-              <div className="btn bt-pr1 btn-outline-primary btn-md btn-main mr-1 px-4" >
-           
-                Start Migrate
-         </div>
-         </a>
-         <a
-                  href="https://youtu.be/FISJaoUIiOM"
-                  target="_blank"
-                >
-              <div className="btn bt-pr2 btn-outline-primary btn-md px-4" >
-           
-                View Demo
-          
-              </div>
+                href="https://github.com/iamvishnuks/xmigrate"
+                target="_blank"
+              >
+                <div className="btn bt-pr1 btn-outline-primary btn-md btn-main mr-1 px-4" >
+
+                  Start Migrate
+                </div>
+              </a>
+              <a
+                href="https://youtu.be/FISJaoUIiOM"
+                target="_blank"
+              >
+                <div className="btn bt-pr2 btn-outline-primary btn-md px-4" >
+
+                  View Demo
+
+                </div>
               </a>
             </Col>
           </Row>
@@ -144,148 +144,163 @@ export default class Landpage extends Component {
 
           <Row id="feature" className="HomeColo p-5 justify-content-md-center">
             <Col>
-             
-                  <Row className="justify-content-md-center">
-                    <Col md="auto" className="banner pt-5">
-                      <h3 className="banner-txt2">
-                        Cross-Migrate using Xmigrate{" "}
-                        <span role="img" aria-label="Happy">
-                          😀
-                        </span>
-                      </h3>
-                      <p className="lead">
-                        The following are the features and advantages of
-                        Xmigrate tool now and will be rolled out in future.
-                      </p>
-                    </Col>
-                  </Row>
-                  <Row className="justify-content-md-center">
-                    <Card
-                      style={{ width: "18rem" }}
-                      className=" border-light p-3 m-3"
-                    >
-                      <Card.Body className="iconcard">
-                        <div  className="clicon p-3">
-                          <FaLock size={50} />
-                        </div>
-                        <Card.Title className="CardTit">Data Privacy</Card.Title>
-                        <Card.Text className="lead">
-                          Xmigrate tool will be deployed in your environment and
-                          no data is send to any third party for any purpose
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
-                    <Card
-                      style={{ width: "18rem" }}
-                      className=" border-light p-3 m-3"
-                    >
-                      <Card.Body className="iconcard">
-                        <div  className=" clicon p-3">
-                          <FaLinux size={50} />
-                        </div>
-                        <Card.Title className="CardTit">Migration of Linux VM's</Card.Title>
-                        <Card.Text className="lead">
-                          Xmigrate has the capability to migrate Linux VM's from
-                          onprem to cloud or cloud to cloud
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
 
-                    <Card
-                      style={{ width: "18rem" }}
-                      className=" border-light p-3 m-3"
-                    >
-                      <Card.Body className="iconcard">
-                        <div  className="clicon p-3">
-                          <FaPaperPlane size={50} />
-                        </div>
-                        <Card.Title className="CardTit">Agentless Migration</Card.Title>
-                        <Card.Text className="lead">
-                          Xmigrate doesn't need any agents to be installed on
-                          the VM's which needs to be migrated
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
+              <Row className="justify-content-md-center">
+                <Col md="auto" className="banner pt-5">
+                  <h3 className="banner-txt2">
+                    Cross-Migrate using Xmigrate{" "}
+                    <span role="img" aria-label="Happy">
+                      😀
+                    </span>
+                  </h3>
+                  <p className="lead">
+                    The following are the features and advantages of
+                    Xmigrate tool now and will be rolled out in future.
+                  </p>
+                </Col>
+              </Row>
+              <Row className="justify-content-md-center">
+                <Card
+                  style={{ width: "18rem" }}
+                  className=" border-light p-3 m-3"
+                >
+                  <Card.Body className="iconcard">
+                    <div className="clicon p-3">
+                      <FaLock size={50} />
+                    </div>
+                    <Card.Title className="CardTit">Data Privacy</Card.Title>
+                    <Card.Text className="lead">
+                      Xmigrate tool will be deployed in your environment and
+                      no data is send to any third party for any purpose
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card
+                  style={{ width: "18rem" }}
+                  className=" border-light p-3 m-3"
+                >
+                  <Card.Body className="iconcard">
+                    <div className=" clicon p-3">
+                      <FaLinux size={50} />
+                    </div>
+                    <Card.Title className="CardTit">Migration of Linux VM's</Card.Title>
+                    <Card.Text className="lead">
+                      Xmigrate has the capability to migrate Linux VM's from
+                      onprem to cloud or cloud to cloud
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
 
-                    <Card
-                      style={{ width: "18rem" }}
-                      className=" border-light p-3 m-3"
-                    >
-                      <Card.Body className="iconcard">
-                        <div  className="clicon p-3">
-                          <FaFingerprint size={50} />
-                        </div>
-                        <Card.Title className="CardTit">Environment Footprinting</Card.Title>
-                        <Card.Text className="lead" >
-                          Efficiently discover the environment of the hosts
-                          which needs to be migrated
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </Row>
-                  <Row className="justify-content-md-center">
-                    <Card
-                      style={{ width: "18rem" }}
-                      className=" border-light p-3 m-3"
-                    >
-                      <Card.Body className="iconcard">
-                        <div  className="clicon p-3">
-                          <FaMapMarkedAlt size={50} />
-                        </div>
-                        <Card.Title className="CardTit">Blueprint Dashboard</Card.Title>
-                        <Card.Text className="lead">
-                          Design the Cloud environment easily from Blueprint
-                          console with footprint data
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
+                <Card
+                  style={{ width: "18rem" }}
+                  className=" border-light p-3 m-3"
+                >
+                  <Card.Body className="iconcard">
+                    <div className="clicon p-3">
+                      <FaPaperPlane size={50} />
+                    </div>
+                    <Card.Title className="CardTit">Agentless Migration</Card.Title>
+                    <Card.Text className="lead">
+                      Xmigrate doesn't need any agents to be installed on
+                      the VM's which needs to be migrated
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
 
-                    <Card
-                      style={{ width: "18rem" }}
-                      className=" border-light p-3 m-3"
-                    >
-                      <Card.Body className="iconcard">
-                        <div className="clicon p-3">
-                          <FaLayerGroup size={50} />
-                        </div>
-                        <Card.Title className="CardTit">Manage environments</Card.Title>
-                        <Card.Text className="lead">
-                          Create and manage multiple environments by creating
-                          multiple projects in Xmigrate
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
+                <Card
+                  style={{ width: "18rem" }}
+                  className=" border-light p-3 m-3"
+                >
+                  <Card.Body className="iconcard">
+                    <div className="clicon p-3">
+                      <FaFingerprint size={50} />
+                    </div>
+                    <Card.Title className="CardTit">Environment Footprinting</Card.Title>
+                    <Card.Text className="lead" >
+                      Efficiently discover the environment of the hosts
+                      which needs to be migrated
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Row>
+              <Row className="justify-content-md-center">
+                <Card
+                  style={{ width: "18rem" }}
+                  className=" border-light p-3 m-3"
+                >
+                  <Card.Body className="iconcard">
+                    <div className="clicon p-3">
+                      <FaMapMarkedAlt size={50} />
+                    </div>
+                    <Card.Title className="CardTit">Blueprint Dashboard</Card.Title>
+                    <Card.Text className="lead">
+                      Design the Cloud environment easily from Blueprint
+                      console with footprint data
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
 
-                    <Card
-                      style={{ width: "18rem" }}
-                      className=" border-light p-3 m-3"
-                    >
-                      <Card.Body className="iconcard">
-                        <div  className="clicon p-3">
-                          <FaStepForward size={50} />
-                        </div>
-                        <Card.Title className="CardTit">VM to container migration</Card.Title>
-                        <Card.Text className="lead">Manage your VM's to containers</Card.Text>
-                      </Card.Body>
-                    </Card>
+                <Card
+                  style={{ width: "18rem" }}
+                  className=" border-light p-3 m-3"
+                >
+                  <Card.Body className="iconcard">
+                    <div className="clicon p-3">
+                      <FaLayerGroup size={50} />
+                    </div>
+                    <Card.Title className="CardTit">Manage environments</Card.Title>
+                    <Card.Text className="lead">
+                      Create and manage multiple environments by creating
+                      multiple projects in Xmigrate
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
 
-                    <Card
-                      style={{ width: "18rem" }}
-                      className=" border-light p-3 m-3"
-                    >
-                      <Card.Body className="iconcard">
-                        <div  className="clicon p-3">
-                          <FaSortAmountUp size={50} />
-                        </div>
-                        <Card.Title className="CardTit">Bandwidth Control</Card.Title>
-                        <Card.Text className="lead">
-                          Control bandwidth usage while you are migrating your
-                          servers
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </Row>
-             
+                <Card
+                  style={{ width: "18rem" }}
+                  className="  p-3 m-3 premium-change"
+                >
+                    <Row>
+                        <Col md={{ span: 6, offset: 6 }}> <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
+                      </Row>
+                  <Card.Body className="iconcard">
+                    <div className="clicon p-3">
+                      
+                    <Row>
+                        <Col md={{ span: 6, offset: 3 }}><FaStepForward size={50} /></Col>
+                      </Row>
+                      
+                    </div>
+                    <Card.Title className="CardTit">Interrupt Handling</Card.Title>
+                    <Card.Text className="lead">Capability to resume your failed migration from last successful checkpoints</Card.Text>
+                  </Card.Body>
+                </Card>
+
+                <Card
+                  style={{ width: "18rem" }}
+                  className="p-3 m-3 premium-change"
+                >
+                       <Row>
+                        <Col md={{ span: 6, offset: 6 }}> <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
+                      </Row>
+                  <Card.Body className="iconcard">
+                    <div className="clicon p-2">
+                 
+                      <Row>
+                        <Col md={{ span: 6, offset: 3 }}><FaSortAmountUp size={50} /></Col>
+                      </Row>
+
+
+                    </div>
+                    <Card.Title className="CardTit">Bandwidth Control</Card.Title>
+                    <Card.Text className="lead">
+                      Control bandwidth usage while you are migrating your
+                      servers
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Row>
+
             </Col>
           </Row>
 
@@ -305,36 +320,36 @@ export default class Landpage extends Component {
             <Row className="justify-content-ls-center pt-4 pb-3 ">
               <Col md={{ span: 4, offset: 4 }}>
                 <Row>
-              <Col xs="3" className=" iconCommunity ">
-                <a href="https://twitter.com/xmigrateOSS" target="_blank">
-                  <FaTwitter size={60} />
-                </a>
-              </Col>
-              <Col xs="3" className=" iconCommunity">
-                <a
-                  href="https://www.youtube.com/channel/UCJc96kOu0tNhDtp7FT91ENg"
-                  target="_blank"
-                >
-                  <FaYoutube size={60} />
-                </a>
-              </Col>
-              <Col xs="3" className=" iconCommunity">
-                <a
-                  href="https://github.com/iamvishnuks/xmigrate/discussions"
-                  target="_blank"
-                >
-                  <FaGithub size={60} />
-                </a>
-              </Col>
-              <Col xs="3" className="iconCommunity">
-                <a
-                  href="https://medium.com/xmigrateoss"
-                  target="_blank"
-                >
-                  <FaMedium size={60} />
-                </a>
-              </Col>
-              </Row>
+                  <Col xs="3" className=" iconCommunity ">
+                    <a href="https://twitter.com/xmigrateOSS" target="_blank">
+                      <FaTwitter size={60} />
+                    </a>
+                  </Col>
+                  <Col xs="3" className=" iconCommunity">
+                    <a
+                      href="https://www.youtube.com/channel/UCJc96kOu0tNhDtp7FT91ENg"
+                      target="_blank"
+                    >
+                      <FaYoutube size={60} />
+                    </a>
+                  </Col>
+                  <Col xs="3" className=" iconCommunity">
+                    <a
+                      href="https://github.com/iamvishnuks/xmigrate/discussions"
+                      target="_blank"
+                    >
+                      <FaGithub size={60} />
+                    </a>
+                  </Col>
+                  <Col xs="3" className="iconCommunity">
+                    <a
+                      href="https://medium.com/xmigrateoss"
+                      target="_blank"
+                    >
+                      <FaMedium size={60} />
+                    </a>
+                  </Col>
+                </Row>
               </Col>
             </Row>
             <Row >

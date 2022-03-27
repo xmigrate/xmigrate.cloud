@@ -3,7 +3,7 @@ import './App.css';
 import Landpage from './pages/Landpage/Landpage'
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
 } from "react-router-dom";
 
@@ -12,9 +12,9 @@ function App() {
 
     <div className="App h-100">
       <Router>
-        <Switch>
-          <Route path="/" component={Landpage} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Landpage/>} />
+        </Routes>
       </Router>
     </div>
   );

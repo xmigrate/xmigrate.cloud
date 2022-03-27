@@ -384,7 +384,7 @@ export default class Landpage extends Component {
                   </p>
                 </Col>
                 <Col xs={{ order: "last" }} >
-                  <p className="pt-3 lead"> &#169; 2020@xmigrate.cloud</p>
+                  <p className="pt-3 lead"> &#169; 2022@xmigrate.cloud</p>
                 </Col>
               </Row>
             </Col>

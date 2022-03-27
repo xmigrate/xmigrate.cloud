@@ -264,7 +264,7 @@ export default class Landpage extends Component {
                         <Col md={{ span: 6, offset: 6 }}> <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
                       </Row>
                   <Card.Body className="iconcard">
-                    <div className="clicon p-3">
+                    <div className="clicon p-2">
                       
                     <Row>
                         <Col md={{ span: 6, offset: 3 }}><FaStepForward size={50} /></Col>

@@ -263,7 +263,7 @@ export default class Landpage extends Component {
                     <Row>
                         <Col md={{ span: 6, offset: 6 }}> <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
                       </Row>
-                  <Card.Body className="iconcard">
+                  <Card.Body className="iconcard premiumCardBody">
                     <div className="clicon p-2">
                       
                     <Row>
@@ -283,7 +283,7 @@ export default class Landpage extends Component {
                        <Row>
                         <Col md={{ span: 6, offset: 6 }}> <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
                       </Row>
-                  <Card.Body className="iconcard">
+                  <Card.Body className="iconcard premiumCardBody">
                     <div className="clicon p-2">
                  
                       <Row>

@@ -162,7 +162,7 @@ export default class Landpage extends Component {
               <Row className="justify-content-md-center">
                 <Card
                   style={{ width: "18rem" }}
-                  className=" border-light p-3 m-3 "
+                  className="cardFeatures p-3 m-3 "
                 >
                   <Card.Body className="iconcard">
                     <div className="clicon p-3">
@@ -177,7 +177,7 @@ export default class Landpage extends Component {
                 </Card>
                 <Card
                   style={{ width: "18rem" }}
-                  className=" border-light p-3 m-3 "
+                  className="cardFeatures p-3 m-3 "
                 >
                   <Card.Body className="iconcard">
                     <div className=" clicon p-3">
@@ -193,7 +193,7 @@ export default class Landpage extends Component {
 
                 <Card
                   style={{ width: "18rem" }}
-                  className=" border-light p-3 m-3 "
+                  className="cardFeatures p-3 m-3 "
                 >
                   <Card.Body className="iconcard">
                     <div className="clicon p-3">
@@ -209,7 +209,7 @@ export default class Landpage extends Component {
 
                 <Card
                   style={{ width: "18rem" }}
-                  className=" border-light p-3 m-3 "
+                  className="cardFeatures p-3 m-3 "
                 >
                   <Card.Body className="iconcard">
                     <div className="clicon p-3">
@@ -226,7 +226,7 @@ export default class Landpage extends Component {
               <Row className="justify-content-md-center">
                 <Card
                   style={{ width: "18rem" }}
-                  className=" border-light p-3 m-3 "
+                  className="cardFeatures p-3 m-3 "
                 >
                   <Card.Body className="iconcard">
                     <div className="clicon p-3">
@@ -242,7 +242,7 @@ export default class Landpage extends Component {
 
                 <Card
                   style={{ width: "18rem" }}
-                  className=" border-light p-3 m-3 "
+                  className="cardFeatures p-3 m-3 "
                 >
                   <Card.Body className="iconcard">
                     <div className="clicon p-3">
@@ -258,7 +258,7 @@ export default class Landpage extends Component {
 
                 <Card
                   style={{ width: "18rem" }}
-                  className="  p-3 m-3 premium-change "
+                  className=" p-3 m-3 premium-change "
                 >
                     <Row>
                         <Col className="premiumcol" md={{ span: 6, offset: 6 }}> <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>

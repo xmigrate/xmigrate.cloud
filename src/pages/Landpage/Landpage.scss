@@ -52,8 +52,17 @@
   }
   .Gitbtn {
     background-color: #3e3f42;
+    border: 8px;
+    border-color: white;
+    box-shadow: 0px;
+    box-shadow: none;
     font-family: "Ubuntu", sans-serif;
   }
+  .Gitbtn:hover,.Gitbtn:active,.Gitbtn:focus {
+    border-color: white;
+    box-shadow: none;
+  }
+
   .banner-txt {
     font-family: "Ubuntu", sans-serif;
     font-weight: lighter;
@@ -70,6 +79,7 @@
   }
   .card {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
   }
   .banner-txt2 {
     font-family: Ubuntu;
@@ -120,4 +130,14 @@
   .premiumCardBody{
     padding: .75rem;
   }
+  .text-mid-1{
+    padding-top: 5rem;
+  }
+  .icons-all{
+    padding-bottom: 5rem;
+  }
+  .premiumcol{
+    text-align: end;
+  }
+  
 }

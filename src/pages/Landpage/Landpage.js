@@ -33,7 +33,7 @@ export default class Landpage extends Component {
       <div className="Landpage">
         {/* Top Navigation Bar  */}
         <Navbar expand="lg" className="sticky-top NavCl">
-          <Navbar.Brand className="navbar-brand col-xs-2 ml-5 mt-3">
+          <Navbar.Brand className="navbar-brand col-xs-2 ml-5">
             <img
               src="Assets/images/logoSm.png"
               width="150"
@@ -49,16 +49,16 @@ export default class Landpage extends Component {
           >
             <Form id="basic-nav-dropdown" className="d-flex">
               <ul className="navbar-nav">
-                <li className="mr-5 ">
+                <li className="mr-5 mt-1">
                   <a href="https://medium.com/xmigrateoss" target="_blank">Documentation</a>
                 </li>
-                <li className="mr-5 ">
+                <li className="mr-5 mt-1">
                   <a href="https://medium.com/xmigrateoss" target="_blank">Blog</a>
                 </li>
               </ul>
               <a href="https://github.com/iamvishnuks/xmigrate/discussions" target="_blank">
                 <Button variant="secondary Gitbtn mr-5 ">
-                  Get Started on Github <FaGithub size={20} />
+                  Get Started on Github <span className="ml-2"><FaGithub size={22} /></span>
                 </Button>
               </a>
             </Form>
@@ -104,7 +104,7 @@ export default class Landpage extends Component {
             </Col>
           </Row>
           <Row className="justify-content-md-center">
-            <Col md="auto" className="banner pt-5">
+            <Col md="auto" className="banner text-mid-1">
               <h1 className="banner-txt2">
                 Xmigrate will soon supports all 3 major public cloud providers
               </h1>
@@ -117,7 +117,7 @@ export default class Landpage extends Component {
               </p>
             </Col>
           </Row>
-          <Row className="justify-content-md-center mt-4">
+          <Row className="justify-content-md-center mt-4 icons-all">
             <Col md="6" className="banner pb-3 mb-5">
               <Row>
                 <Col md="4">
@@ -162,7 +162,7 @@ export default class Landpage extends Component {
               <Row className="justify-content-md-center">
                 <Card
                   style={{ width: "18rem" }}
-                  className=" border-light p-3 m-3"
+                  className=" border-light p-3 m-3 "
                 >
                   <Card.Body className="iconcard">
                     <div className="clicon p-3">
@@ -177,7 +177,7 @@ export default class Landpage extends Component {
                 </Card>
                 <Card
                   style={{ width: "18rem" }}
-                  className=" border-light p-3 m-3"
+                  className=" border-light p-3 m-3 "
                 >
                   <Card.Body className="iconcard">
                     <div className=" clicon p-3">
@@ -193,7 +193,7 @@ export default class Landpage extends Component {
 
                 <Card
                   style={{ width: "18rem" }}
-                  className=" border-light p-3 m-3"
+                  className=" border-light p-3 m-3 "
                 >
                   <Card.Body className="iconcard">
                     <div className="clicon p-3">
@@ -209,7 +209,7 @@ export default class Landpage extends Component {
 
                 <Card
                   style={{ width: "18rem" }}
-                  className=" border-light p-3 m-3"
+                  className=" border-light p-3 m-3 "
                 >
                   <Card.Body className="iconcard">
                     <div className="clicon p-3">
@@ -226,7 +226,7 @@ export default class Landpage extends Component {
               <Row className="justify-content-md-center">
                 <Card
                   style={{ width: "18rem" }}
-                  className=" border-light p-3 m-3"
+                  className=" border-light p-3 m-3 "
                 >
                   <Card.Body className="iconcard">
                     <div className="clicon p-3">
@@ -242,7 +242,7 @@ export default class Landpage extends Component {
 
                 <Card
                   style={{ width: "18rem" }}
-                  className=" border-light p-3 m-3"
+                  className=" border-light p-3 m-3 "
                 >
                   <Card.Body className="iconcard">
                     <div className="clicon p-3">
@@ -258,16 +258,16 @@ export default class Landpage extends Component {
 
                 <Card
                   style={{ width: "18rem" }}
-                  className="  p-3 m-3 premium-change"
+                  className="  p-3 m-3 premium-change "
                 >
                     <Row>
-                        <Col md={{ span: 6, offset: 6 }}> <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
+                        <Col className="premiumcol" md={{ span: 6, offset: 6 }}> <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
                       </Row>
                   <Card.Body className="iconcard premiumCardBody">
                     <div className="clicon p-2">
                       
                     <Row>
-                        <Col md={{ span: 6, offset: 3 }}><FaStepForward size={50} /></Col>
+                        <Col  md={{ span: 6, offset: 3 }}><FaStepForward size={50} /></Col>
                       </Row>
                       
                     </div>
@@ -278,10 +278,10 @@ export default class Landpage extends Component {
 
                 <Card
                   style={{ width: "18rem" }}
-                  className="p-3 m-3 premium-change"
+                  className="p-3 m-3 premium-change "
                 >
                        <Row>
-                        <Col md={{ span: 6, offset: 6 }}> <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
+                        <Col className="premiumcol" md={{ span: 6, offset: 6 }} > <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
                       </Row>
                   <Card.Body className="iconcard premiumCardBody">
                     <div className="clicon p-2">
@@ -366,7 +366,7 @@ export default class Landpage extends Component {
             <Col md="8">
               <Row>
                 <Col xs={{ order: "first" }}>
-                  <ul className="footer-list lead pt-3">
+                  <ul className="footer-list lead pt-4 mt-1">
                     <li>Home</li>
                     <li>Features</li>
                     <li>Community</li>
@@ -384,7 +384,7 @@ export default class Landpage extends Component {
                   </p>
                 </Col>
                 <Col xs={{ order: "last" }} >
-                  <p className="pt-3 lead"> &#169; 2022@xmigrate.cloud</p>
+                  <p className="pt-4 mt-1 lead"> &#169; 2022@xmigrate.cloud</p>
                 </Col>
               </Row>
             </Col>

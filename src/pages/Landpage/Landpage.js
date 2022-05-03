@@ -50,7 +50,7 @@ export default class Landpage extends Component {
             <Form id="basic-nav-dropdown" className="d-flex">
               <ul className="navbar-nav">
                 <li className="mr-5 mt-1">
-                  <a href="https://medium.com/xmigrateoss" target="_blank">Documentation</a>
+                  <a href="https://docs.xmigrate.cloud" target="_blank">Documentation</a>
                 </li>
                 <li className="mr-5 mt-1">
                   <a href="https://medium.com/xmigrateoss" target="_blank">Blog</a>

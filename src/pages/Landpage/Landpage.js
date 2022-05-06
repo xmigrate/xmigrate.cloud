@@ -363,7 +363,7 @@ export default class Landpage extends Component {
           </div>
           {/* Footer */}
           <Row className="justify-content-md-center footer">
-            <Col md="8">
+            <Col xs="9">
               <Row>
                 <Col xs={{ order: "first" }}>
                   <ul className="footer-list lead pt-4 mt-1">

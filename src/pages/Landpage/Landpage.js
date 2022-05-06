@@ -33,7 +33,7 @@ export default class Landpage extends Component {
       <div className="Landpage">
         {/* Top Navigation Bar  */}
         <Navbar expand="lg" className="sticky-top NavCl">
-          <Navbar.Brand className="navbar-brand col-xs-2 ml-5">
+          <Navbar.Brand className="navbar-brand col-xs-2">
             <img
               src="Assets/images/logoSm.png"
               width="150"
@@ -49,15 +49,15 @@ export default class Landpage extends Component {
           >
             <Form id="basic-nav-dropdown" className="d-flex">
               <ul className="navbar-nav">
-                <li className="mr-5 mt-1">
+                <li className="limargin mt-1">
                   <a href="https://docs.xmigrate.cloud" target="_blank">Documentation</a>
                 </li>
-                <li className="mr-5 mt-1">
+                <li className="limargin mt-1">
                   <a href="https://medium.com/xmigrateoss" target="_blank">Blog</a>
                 </li>
               </ul>
               <a href="https://github.com/iamvishnuks/xmigrate/discussions" target="_blank">
-                <Button variant="secondary Gitbtn mr-5 ">
+                <Button variant="secondary Gitbtn limargin ">
                   Get Started on Github <span className="ml-2"><FaGithub size={22} /></span>
                 </Button>
               </a>
@@ -367,9 +367,9 @@ export default class Landpage extends Component {
               <Row>
                 <Col xs={{ order: "first" }}>
                   <ul className="footer-list lead pt-4 mt-1">
-                    <li>Home</li>
-                    <li>Features</li>
-                    <li>Community</li>
+                  <li> <a href="#Home">Home</a></li>
+                   <li> <a href="#feature">Features</a></li>
+                   <li> <a href="#home">Community</a></li>
                   </ul>
                 </Col>
                 <Col >

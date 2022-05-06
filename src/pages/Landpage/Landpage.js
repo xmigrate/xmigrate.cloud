@@ -369,7 +369,7 @@ export default class Landpage extends Component {
                   <ul className="footer-list lead pt-4 mt-1">
                   <li> <a href="#Home">Home</a></li>
                    <li> <a href="#feature">Features</a></li>
-                   <li> <a href="#home">Community</a></li>
+                   <li> <a href="https://github.com/xmigrate/xmigrate/discussions/"  target="_blank">Community</a></li>
                   </ul>
                 </Col>
                 <Col >

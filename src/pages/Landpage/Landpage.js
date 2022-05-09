@@ -106,7 +106,7 @@ export default class Landpage extends Component {
           <Row className="justify-content-md-center">
             <Col md="auto" className="banner text-mid-1">
               <h1 className="banner-txt2">
-                Xmigrate will soon supports all 3 major public cloud providers
+                Xmigrate supports all 3 major public cloud providers
               </h1>
               <p className="lead">
                 We are rigourosly testing and rolling out updates to our

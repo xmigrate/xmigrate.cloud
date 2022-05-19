@@ -73,7 +73,7 @@ export default class Landpage extends Component {
               <p className="lead">
                 Xmigrate(pronounced as cross-migrate) is an opensource tool for
                 migrating your VM's <br />
-                from anywhere to cloud and cloud to anywhere seemlesly.
+                from anywhere to cloud and cloud to anywhere seamlesly.
               </p>
               <a
                 href="https://github.com/iamvishnuks/xmigrate"

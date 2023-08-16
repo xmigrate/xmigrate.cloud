@@ -22,8 +22,12 @@ import {
   FaLayerGroup,
   FaStepForward,
   FaSortAmountUp,
+  FaWindows,
   FaMedium
 } from "react-icons/fa";
+import {
+  MdMoving
+} from "react-icons/md"
 import { Link } from "react-router-dom";
 import "./Landpage.scss";
 
@@ -260,16 +264,16 @@ export default class Landpage extends Component {
                   style={{ width: "18rem" }}
                   className=" p-3 m-3 premium-change "
                 >
-                    <Row>
-                        <Col className="premiumcol" md={{ span: 6, offset: 6 }}> <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
-                      </Row>
+                  <Row>
+                    <Col className="premiumcol" md={{ span: 6, offset: 6 }}> <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
+                  </Row>
                   <Card.Body className="iconcard premiumCardBody">
                     <div className="clicon p-2">
-                      
-                    <Row>
-                        <Col  md={{ span: 6, offset: 3 }}><FaStepForward size={50} /></Col>
+
+                      <Row>
+                        <Col md={{ span: 6, offset: 3 }}><FaStepForward size={50} /></Col>
                       </Row>
-                      
+
                     </div>
                     <Card.Title className="CardTit">Interrupt Handling</Card.Title>
                     <Card.Text className="lead">Capability to resume your failed migration from last successful checkpoints</Card.Text>
@@ -280,12 +284,12 @@ export default class Landpage extends Component {
                   style={{ width: "18rem" }}
                   className="p-3 m-3 premium-change "
                 >
-                       <Row>
-                        <Col className="premiumcol" md={{ span: 6, offset: 6 }} > <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
-                      </Row>
+                  <Row>
+                    <Col className="premiumcol" md={{ span: 6, offset: 6 }} > <Button className="btn-premium" variant="primary" size="sm">Premium</Button></Col>
+                  </Row>
                   <Card.Body className="iconcard premiumCardBody">
                     <div className="clicon p-2">
-                 
+
                       <Row>
                         <Col md={{ span: 6, offset: 3 }}><FaSortAmountUp size={50} /></Col>
                       </Row>
@@ -300,7 +304,51 @@ export default class Landpage extends Component {
                   </Card.Body>
                 </Card>
               </Row>
+              {/* {upcoming feature cards added */}
+              <Row className="justify-content-left p-2">
+                <Card
+                  style={{ width: "18rem" }}
+                  className=" p-3 m-3 comingsoon-change "
+                >
+                  <Row>
+                    <Col className="premiumcol" md={{ span: 6, offset: 6 }}> <Button className="btn-premium" variant="primary" size="sm">Coming soon</Button></Col>
+                  </Row>
+                  <Card.Body className="iconcard premiumCardBody">
+                    <div className="clicon p-2">
 
+                      <Row>
+                        <Col md={{ span: 6, offset: 3 }}><FaWindows size={50} /></Col>
+                      </Row>
+
+                    </div>
+                    <Card.Title className="CardTit">Windows migration</Card.Title>
+                    <Card.Text className="lead">Migration of IIS windows servers will be supported in xmigrate soon</Card.Text>
+                  </Card.Body>
+                </Card>
+                {/* ----- */}
+                <Card
+                  style={{ width: "18rem" }}
+                  className="p-3 m-3 comingsoon-change "
+                >
+                  <Row>
+                    <Col className="premiumcol" md={{ span: 6, offset: 6 }} > <Button className="btn-premium" variant="primary" size="sm">Coming soon</Button></Col>
+                  </Row>
+                  <Card.Body className="iconcard premiumCardBody">
+                    <div className="clicon p-2">
+
+                      <Row>
+                        <Col md={{ span: 6, offset: 3 }}><MdMoving size={50} /></Col>
+                      </Row>
+
+
+                    </div>
+                    <Card.Title className="CardTit">Live migration</Card.Title>
+                    <Card.Text className="lead">
+                      Be DR ready with xmigrates cutting edge live migration tech
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Row>
             </Col>
           </Row>
 
@@ -367,9 +415,9 @@ export default class Landpage extends Component {
               <Row>
                 <Col xs={{ order: "first" }}>
                   <ul className="footer-list lead pt-4 mt-1">
-                  <li> <a href="#Home">Home</a></li>
-                   <li> <a href="#feature">Features</a></li>
-                   <li> <a href="https://github.com/xmigrate/xmigrate/discussions/"  target="_blank">Community</a></li>
+                    <li> <a href="#Home">Home</a></li>
+                    <li> <a href="#feature">Features</a></li>
+                    <li> <a href="https://github.com/xmigrate/xmigrate/discussions/" target="_blank">Community</a></li>
                   </ul>
                 </Col>
                 <Col >

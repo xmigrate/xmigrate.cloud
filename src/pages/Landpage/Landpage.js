@@ -305,7 +305,7 @@ export default class Landpage extends Component {
                 </Card>
               </Row>
               {/* {upcoming feature cards added */}
-              <Row className="justify-content-left p-2">
+              <Row className="justify-content-center p-2">
                 <Card
                   style={{ width: "18rem" }}
                   className=" p-3 m-3 comingsoon-change "

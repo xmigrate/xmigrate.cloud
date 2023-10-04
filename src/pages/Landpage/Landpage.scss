@@ -332,8 +332,8 @@
 .image-on-pattern {
   position: absolute;
   top: -600px;
-  left: 70px;
-  width: 630px; /* Set the width to 100% to cover the entire pattern */
+  left: 85px;
+  width: 623px; /* Set the width to 100% to cover the entire pattern */
   height: 488px; /* Set the height to 100% to cover the entire pattern */
   object-fit: cover; /* You can adjust object-fit to fit, contain, etc. depending on your needs */
   z-index: 1; /* Ensure the image is on top of the pattern */

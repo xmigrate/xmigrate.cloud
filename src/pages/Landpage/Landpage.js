@@ -354,7 +354,7 @@ export default class Landpage extends Component {
           <Row className="justify-content-md-center">
             <Col md="6">
               <div class="form-head">
-                <form class="form" action="" netlify>
+                <form class="form" netlify>
                   <p class="form-title">Sign in up for Beta</p>
                   <h3 class="form-sub-title">start your 30-day free trial</h3>
 

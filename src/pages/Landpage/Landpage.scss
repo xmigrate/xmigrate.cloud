@@ -236,7 +236,7 @@
 .form {
   background-color: #fff;
   padding: 1rem;
-  // max-width: 500px;
+  max-width: 800px;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -343,64 +343,54 @@
   /* Shadows/shadow-xs */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
-
-.pattern {
-  flex-shrink: 0;
-  padding-top: 178px;
-  padding-bottom: 50px;
-  // padding-right: 50px;
-}
-
-.box {
-  width: 780px;
-  height: 488px;
-  flex-shrink: 0;
-  border-radius: 16px;
-  border: 5px solid rgba(0, 0, 0, 0.02);
-}
-.image-on-pattern {
-  flex-shrink: 0;
-  flex-shrink: 0;
-  padding-top: 60px;
-  padding-bottom: 50px;
-  position: absolute;
-  left: 85px;
-  width: 175%;
-  /* Set the width to 100% to cover the entire pattern */
-  height: 100%;
-  /* Set the height to 100% to cover the entire pattern */
-  object-fit: cover;
-  /* You can adjust object-fit to fit, contain, etc. depending on your needs */
-  z-index: 1;
-  overflow: hidden;
-  /* Ensure the image is on top of the pattern */
-}
-
-.image {
-  margin-top: -580px;
-  // width: 740px;
-  height: 488px;
-  flex-shrink: 0;
-  overflow: hidden;
-  // background-color: #3e3f42;
-  object-fit: cover;
+.pattern{
+  padding-top: 35px;
 }
 @media (max-width: 991px) {
-  .image-on-pattern{
-    padding-top: 315px;
-    padding-bottom: 0px;
-    position: absolute;
-    left: 45px;
-    width: 87%;
-    height: 108%;
-    object-fit: cover;
-    z-index: 1;
-    overflow: hidden;
-}
+
     .form-head{
       padding-top: 35px;
+      padding-bottom: 35px;
     }
-    .pattern{
-      padding-top: 2px;
-    }
+    
   } 
+  
+  @media (min-width: 1200px) {
+    .form-head {
+      padding-top: 200px; /* Adjust padding for larger screens */
+      padding-bottom: 200px; /* Adjust padding for larger screens */
+    }
+  
+    .form {
+      max-width: 100%; /* Expand the form to the full width of the container */
+    }
+  
+    .form-title {
+      font-size: 36px; /* Increase font size for the title */
+      line-height: 48px; /* Adjust line height for the title */
+    }
+  
+    .form-sub-title {
+      font-size: 18px; /* Increase font size for the subtitle */
+      line-height: 28px; /* Adjust line height for the subtitle */
+    }
+  
+    .form-label {
+      font-size: 16px; /* Increase font size for labels */
+    }
+  
+    .form-input {
+      font-size: 16px; /* Increase font size for input fields */
+      line-height: 28px; /* Adjust line height for input fields */
+    }
+  
+    .input-container input {
+      padding: 14px 18px; /* Adjust padding for input fields */
+    }
+  
+    .submit {
+      font-size: 18px; /* Increase font size for the button */
+      padding: 14px 20px; /* Adjust padding for the button */
+    }
+  }
+  

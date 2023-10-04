@@ -354,29 +354,29 @@ export default class Landpage extends Component {
           <Row className="justify-content-md-center">
             <Col md="6">
               <div class="form-head">
-                <form class="form" form name="signupbeta" method="POST" data-netlify="true">
+                <form class="form" name="signupbeta" method="POST" data-netlify="true">
                   <p class="form-title">Sign Up for Early Beta Access</p>
                   <h3 class="form-sub-title">Be the first to experience the new eBPF based DR technology</h3>
 
                   <div class="input-container">
                     <label class="form-label">Full name</label>
-                    <input class="form-input" type="text" placeholder="Enter Your Full Name" />
+                    <input class="form-input" type="text" placeholder="Enter Your Full Name" name="name" />
                     <span>
                     </span>
                   </div>
                   <div class="input-container">
                     <label class="form-label">Email</label>
-                    <input class="form-input" type="email" placeholder="Enter Your Email" />
+                    <input class="form-input" type="email" placeholder="Enter Your Email" name="email"/>
                     <span>
                     </span>
                   </div>
                   <div class="input-container">
                     <label class="form-label">Organization</label>
-                    <input class="form-input" type="text" placeholder="Enter Your Organization" />
+                    <input class="form-input" type="text" placeholder="Enter Your Organization" name="organization"/>
                   </div>
                   <div class="input-container">
                     <button type="submit" className="btn bt-pr1 btn-outline-primary btn-md btn-main mr-1 px-4 submit">
-                      Get Started
+                      Sign Up
                     </button>
                   </div>
                 </form>

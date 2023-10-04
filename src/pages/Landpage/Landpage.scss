@@ -12,7 +12,7 @@
   .navbar-brand {
     margin-left: 3rem;
   }
-  .limargin{
+.limargin{
     margin-right: 3rem;
   }
   .NavCl {
@@ -24,7 +24,7 @@
     font-weight: normal;
     font-size: 1.1rem;
   }
-  .navbar-nav > li > a {
+.navbar-nav > li > a {
     color: #666666;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
@@ -64,7 +64,7 @@
     box-shadow: none;
     font-family: "Ubuntu", sans-serif;
   }
-  .Gitbtn:hover,.Gitbtn:active,.Gitbtn:focus {
+.Gitbtn:hover,.Gitbtn:active,.Gitbtn:focus {
     border-color: white;
     box-shadow: none;
   }
@@ -141,22 +141,22 @@
     line-height: 14px;
     border-radius: 100px;
   }
-  .premiumCardBody{
+.premiumCardBody{
     padding: .75rem;
   }
-  .text-mid-1{
+.text-mid-1{
     padding-top: 5rem;
   }
-  .icons-all{
+.icons-all{
     padding-bottom: 5rem;
   }
-  .premiumcol{
+.premiumcol{
     text-align: end;
   }
-  .cardFeatures{
+.cardFeatures{
     border: 0px solid rgba(0,0,0,.125);
   }
-  .footer-list a{
+.footer-list a{
     text-decoration: none;
     color: #999;
     list-style: none;
@@ -167,17 +167,174 @@
   }
 
   @media (max-width: 991px){
-  #basic-nav-dropdown {
-    display: inline !important ;
-  }
-  .navbar-brand {
-    margin-left: 2px;
-  }
-  .img-fluid{
-    margin-top: 1rem;
-  }
-  .limargin{
-    margin-right: 0px;
+    #basic-nav-dropdown {
+      display: inline !important ;
+    }
+    .navbar-brand {
+      margin-left: 2px;
+    }
+.img-fluid{
+      margin-top: 1rem;
+    }
+.limargin{
+      margin-right: 0px;
+    }
   }
 }
+
+.form-head {
+  display: flexbox;
+  width: 460px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-left: 55px;
+  padding-top: 124px;
+  padding-bottom: 124px;
+  input:focus {
+    outline: none;
+  }
+}
+
+.form {
+  background-color: #fff;
+  display: block;
+  padding: 1rem;
+  // max-width: 500px;
+  border-radius: 0.5rem;
+  // box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+
+}
+
+.form-sub-title {
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #475467;
+  text-align: left;
+
+}
+
+.form-label {
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #344054;
+  text-align: left;
+}
+
+.form-input {
+  display: webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  flex: 1 0 0;
+  overflow: hidden;
+  color: var(--gray-500, #667085);
+  text-overflow: ellipsis;
+  font-family: ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 171.429% */
+
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  align-self: stretch;
+}
+
+.input-container input {
+  display: flex;
+  padding: 10px 14px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--gray-300, #D0D5DD);
+  background: var(--base-white, #FFF);
+
+  /* Shadows/shadow-xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.input-container input {
+  border-radius: 8px;
+  border: 1px solid var(--gray-300, #D0D5DD);
+  background: var(--base-white, #FFF);
+
+  /* Shadows/shadow-xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.submit {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #0082FF;
+  background: #0082FF;
+  color: var(--base-white, #FFF);
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 150% */
+
+  /* Shadows/shadow-xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.pattern {
+  flex-shrink: 0;
+  padding-top: 178px;
+  padding-bottom: 50;
+}
+
+.box {
+  width: 780px;
+  height: 488px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 5px solid rgba(0, 0, 0, 0.02);
+  // background: url(/xmigrate.cloud/public/Assets/images/Screen2.gif), lightgray 50% / cover no-repeat;
+  // box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.05);
+}
+
+.pattern-container {
+  position: relative;
+  width: 708px; /* Set the width and height to match the SVG dimensions */
+  height: 540px;
+}
+
+.image-on-pattern {
+  position: absolute;
+  top: -600px;
+  left: 70px;
+  width: 630px; /* Set the width to 100% to cover the entire pattern */
+  height: 488px; /* Set the height to 100% to cover the entire pattern */
+  object-fit: cover; /* You can adjust object-fit to fit, contain, etc. depending on your needs */
+  z-index: 1; /* Ensure the image is on top of the pattern */
 }

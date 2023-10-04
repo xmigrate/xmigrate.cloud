@@ -355,7 +355,7 @@ export default class Landpage extends Component {
             <Col md="6">
               <div class="form-head">
                 <form class="form" form name="signupbeta" method="POST" data-netlify="true">
-                  <p class="form-title">Sign In Up for Early Beta Access</p>
+                  <p class="form-title">Sign Up for Early Beta Access</p>
                   <h3 class="form-sub-title">Be the first to experience the new eBPF based DR technology</h3>
 
                   <div class="input-container">

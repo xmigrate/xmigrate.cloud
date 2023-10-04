@@ -39,8 +39,8 @@ export default class Landpage extends Component {
         <Navbar expand="lg" className="sticky-top NavCl">
           <Navbar.Brand className="navbar-brand col-xs-2">
             <img
-              src="Assets/images/logoSm.png"
-              width="150"
+              src="Assets/images/Xmigratelogo.png"
+              width="100"
               height="40"
               className="d-inline-block align-top"
               alt="xmigrate logo"
@@ -351,6 +351,46 @@ export default class Landpage extends Component {
               </Row>
             </Col>
           </Row>
+          <Row className="justify-content-md-center">
+            <Col md="6">
+              <div class="form-head">
+                <form class="form" form name="signupbeta" method="POST" data-netlify="true">
+                  <p class="form-title">Sign Up for Early Beta Access</p>
+                  <h3 class="form-sub-title">Be the first to experience the new eBPF based DR technology</h3>
+
+                  <div class="input-container">
+                    <label class="form-label">Full name</label>
+                    <input class="form-input" type="text" placeholder="Enter Your Full Name" />
+                    <span>
+                    </span>
+                  </div>
+                  <div class="input-container">
+                    <label class="form-label">Email</label>
+                    <input class="form-input" type="email" placeholder="Enter Your Email" />
+                    <span>
+                    </span>
+                  </div>
+                  <div class="input-container">
+                    <label class="form-label">Organization</label>
+                    <input class="form-input" type="text" placeholder="Enter Your Organization" />
+                  </div>
+                  <div class="input-container">
+                    <button type="submit" className="btn bt-pr1 btn-outline-primary btn-md btn-main mr-1 px-4 submit">
+                      Get Started
+                    </button>
+                  </div>
+                </form>
+
+              </div>
+            </Col>
+            <Col md="6">
+              <div class="pattern" >
+                <img src="/Assets/images/undraw_cloud_hosting.svg" alt="SVG Image Description" class="img-fluid"/>
+              </div>
+            </Col>
+
+          </Row>
+
 
           {/* Community */}
           <div id="Community" className="justify-content-md-center p-5">
@@ -423,9 +463,9 @@ export default class Landpage extends Component {
                 <Col >
                   <p className="footer-brand pt-3">
                     <img
-                      src="Assets/images/logoSm.png"
-                      width="150"
-                      height="40"
+                      src="Assets/images/Xmigratelogo.png"
+                      width="130"
+                      height="60"
                       className="d-inline-block align-top"
                       alt="Xmigrate logo"
                     />

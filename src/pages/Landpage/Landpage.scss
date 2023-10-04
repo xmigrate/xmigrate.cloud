@@ -1,61 +1,76 @@
 .Landpage {
+
   h1,
   h6 {
     font-family: "Ubuntu", sans-serif;
     font-style: normal;
     font-size: 30px;
   }
+
   h1,
   h5 {
     font-weight: normal;
   }
+
   .navbar-brand {
     margin-left: 3rem;
   }
-.limargin{
+
+  .limargin {
     margin-right: 3rem;
   }
+
   .NavCl {
     background-color: white;
   }
+
   .CardTit {
     font-family: "Ubuntu", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.1rem;
   }
-.navbar-nav > li > a {
+
+  .navbar-nav>li>a {
     color: #666666;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
   }
+
   a:hover {
     text-decoration: none;
   }
+
   .banner {
     text-align: center;
   }
+
   .btn {
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     font-weight: 500;
   }
+
   .bt-pr1 {
     color: white;
     background-color: #0082ff;
   }
+
   .bt-pr1:hover {
     color: #0082ff;
     background-color: white;
   }
+
   .bt-pr2 {
     color: #0082ff;
     background-color: white;
   }
+
   .bt-pr2:hover {
     color: white;
     background-color: #0082ff;
   }
+
   .Gitbtn {
     background-color: #3e3f42;
     border: 8px;
@@ -64,7 +79,10 @@
     box-shadow: none;
     font-family: "Ubuntu", sans-serif;
   }
-.Gitbtn:hover,.Gitbtn:active,.Gitbtn:focus {
+
+  .Gitbtn:hover,
+  .Gitbtn:active,
+  .Gitbtn:focus {
     border-color: white;
     box-shadow: none;
   }
@@ -74,24 +92,29 @@
     font-weight: lighter;
     font-size: 2.5rem;
   }
+
   .lead {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-size: 1rem;
     color: #999;
   }
+
   .boxshad {
     box-shadow: 20px 20px 50px #dfdede;
   }
+
   .card {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
   }
+
   .banner-txt2 {
     font-family: Ubuntu;
     font-weight: lighter;
     font-size: 2.3rem;
   }
+
   .HomeColo {
     background-color: #f9f9f9;
   }
@@ -101,10 +124,11 @@
     color: #0082ff !important;
   }
 
-  ul.footer-list > li {
+  ul.footer-list>li {
     display: inline;
     margin: .5rem;
   }
+
   .iconcard {
     text-align: center;
   }
@@ -112,21 +136,26 @@
   .footer {
     border-top: 0.3px solid lightgray;
   }
+
   .iconCommunity a {
     color: grey;
   }
+
   .iconCommunity a:hover {
     color: #0082ff;
     cursor: pointer;
   }
+
   .clicon {
     color: #0082ff;
   }
+
   .premium-change {
     border-style: solid;
     border-width: 2px;
     border-color: #0082ff;
   }
+
   // New card style--
   .comingsoon-change {
     border-style: solid;
@@ -134,6 +163,7 @@
     border-color: #0082ff;
     opacity: 0.5;
   }
+
   // {-------}
   .btn-premium {
     font-weight: 500;
@@ -141,56 +171,63 @@
     line-height: 14px;
     border-radius: 100px;
   }
-.premiumCardBody{
+
+  .premiumCardBody {
     padding: .75rem;
   }
-.text-mid-1{
+
+  .text-mid-1 {
     padding-top: 5rem;
   }
-.icons-all{
+
+  .icons-all {
     padding-bottom: 5rem;
   }
-.premiumcol{
+
+  .premiumcol {
     text-align: end;
   }
-.cardFeatures{
-    border: 0px solid rgba(0,0,0,.125);
+
+  .cardFeatures {
+    border: 0px solid rgba(0, 0, 0, .125);
   }
-.footer-list a{
+
+  .footer-list a {
     text-decoration: none;
     color: #999;
     list-style: none;
   }
 
-  .footer-list a:hover{
+  .footer-list a:hover {
     color: #0082ff;
   }
 
-  @media (max-width: 991px){
+  @media (max-width: 991px) {
     #basic-nav-dropdown {
-      display: inline !important ;
+      display: inline !important;
     }
+
     .navbar-brand {
       margin-left: 2px;
     }
-.img-fluid{
+
+    .img-fluid {
       margin-top: 1rem;
     }
-.limargin{
+
+    .limargin {
       margin-right: 0px;
     }
   }
 }
 
 .form-head {
-  display: flexbox;
-  width: 460px;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
-  padding-left: 55px;
   padding-top: 124px;
   padding-bottom: 124px;
+
   input:focus {
     outline: none;
   }
@@ -198,10 +235,11 @@
 
 .form {
   background-color: #fff;
-  display: block;
   padding: 1rem;
   // max-width: 500px;
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
   // box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
@@ -212,7 +250,6 @@
   line-height: 44px;
   letter-spacing: -0.02em;
   text-align: left;
-
 
 }
 
@@ -310,9 +347,8 @@
 .pattern {
   flex-shrink: 0;
   padding-top: 178px;
-  padding-bottom: 50;
-  width: 100%;
-  height: auto;
+  padding-bottom: 50px;
+  // padding-right: 50px;
 }
 
 .box {
@@ -321,22 +357,54 @@
   flex-shrink: 0;
   border-radius: 16px;
   border: 5px solid rgba(0, 0, 0, 0.02);
-  // background: url(/xmigrate.cloud/public/Assets/images/Screen2.gif), lightgray 50% / cover no-repeat;
-  // box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.05);
 }
-
-.pattern-container {
-  position: relative;
-  width: 708px; /* Set the width and height to match the SVG dimensions */
-  height: 540px;
-}
-
 .image-on-pattern {
+  flex-shrink: 0;
+  flex-shrink: 0;
+  padding-top: 60px;
+  padding-bottom: 50px;
   position: absolute;
-  top: -600px;
   left: 85px;
-  width: 623px; /* Set the width to 100% to cover the entire pattern */
-  height: 488px; /* Set the height to 100% to cover the entire pattern */
-  object-fit: cover; /* You can adjust object-fit to fit, contain, etc. depending on your needs */
-  z-index: 1; /* Ensure the image is on top of the pattern */
+  width: 175%;
+  /* Set the width to 100% to cover the entire pattern */
+  height: 100%;
+  /* Set the height to 100% to cover the entire pattern */
+  object-fit: cover;
+  /* You can adjust object-fit to fit, contain, etc. depending on your needs */
+  z-index: 1;
+  overflow: hidden;
+  /* Ensure the image is on top of the pattern */
 }
+
+.image {
+  margin-top: -580px;
+  // width: 740px;
+  height: 488px;
+  flex-shrink: 0;
+  overflow: hidden;
+  // background-color: #3e3f42;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .image-on-pattern{
+    padding-top: 315px;
+    padding-bottom: 0px;
+    position: absolute;
+    left: 45px;
+    width: 87%;
+    height: 108%;
+    object-fit: cover;
+    z-index: 1;
+    overflow: hidden;
+}
+  }
+  @media (max-width: 991px) {
+    .form-head{
+      padding-top: 35px;
+    }
+  }  
+  @media (max-width: 991px) {
+    .pattern{
+      padding-top: 2px;
+    }
+  }  

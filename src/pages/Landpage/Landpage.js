@@ -385,7 +385,7 @@ export default class Landpage extends Component {
             </Col>
             <Col md="6">
               <div class="pattern" >
-                <svg  viewBox="0 0 697 486" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 697 497" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_0_3)">
                     <path d="M30.2104 220.379L2.84238 210.415" stroke="#0082FF" stroke-width="2" />
                     <path d="M29.1436 158.205L3.92117 143.639" stroke="#0082FF" stroke-width="2" />
@@ -507,7 +507,9 @@ export default class Landpage extends Component {
                   </defs>
                 </svg>
                 <Col md="6">
+                  <div class="image">
                     <img src="Assets/images/Screen3.png" alt="Your Image" class="image-on-pattern" />
+                    </div>
                 </Col>
               </div>
             </Col>

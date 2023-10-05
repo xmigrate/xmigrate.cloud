@@ -390,14 +390,12 @@ export default class Landpage extends Component {
                   <div class="input-container">
                     <label class="form-label">Fullname</label>
                     <input name="full_name" class="form-input" type="text" placeholder="Enter Your Full Name" required/>
-                    <span>
-                    </span>
+                    
                   </div>
                   <div class="input-container">
                     <label class="form-label">Email</label>
                     <input name="email" class="form-input" type="email" placeholder="Enter Your Email" required/>
-                    <span>
-                    </span>
+                    
                   </div>
                   <div class="input-container">
                     <label class="form-label">Organization</label>

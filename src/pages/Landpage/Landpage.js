@@ -28,10 +28,36 @@ import {
 import {
   MdMoving
 } from "react-icons/md"
+import { sendEmail } from "../../utils/Emailscript";
 import { Link } from "react-router-dom";
 import "./Landpage.scss";
 
 export default class Landpage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      successMessage: "", // Initialize successMessage to an empty string
+    };
+  }
+  handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Get form data
+    const fullName = e.target.elements.full_name.value;
+    const email = e.target.elements.email.value;
+    const organization = e.target.elements.organization.value;
+
+    sendEmail(fullName, email, organization)
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        // Update the success message
+        this.setState({ successMessage: "Thank you for signing up! " });
+      })
+      .catch((error) => {
+        console.error("Email sending failed:", error);
+        // Handle error (e.g., show an error message)
+      });
+  };
   render() {
     return (
       <div className="Landpage">
@@ -352,27 +378,27 @@ export default class Landpage extends Component {
             </Col>
           </Row>
           <Row className="justify-content-md-center">
+            
             <Col md="6">
+              {/* Display the success message */}
+            
               <div class="form-head">
-                <form class="form" name="signupbeta" method="POST" data-netlify="true">
+                <form id="signupForm" class="form" form name="signupbeta" method="POST" onSubmit={this.handleSubmit}>
                   <p class="form-title">Sign Up for Early Beta Access</p>
                   <h3 class="form-sub-title">Be the first to experience the new eBPF based DR technology</h3>
 
                   <div class="input-container">
                     <label class="form-label">Full name</label>
-                    <input class="form-input" type="text" placeholder="Enter Your Full Name" name="name" />
-                    <span>
-                    </span>
+                    <input name="full_name" class="form-input" type="text" placeholder="Enter Your Full Name" required/>
                   </div>
                   <div class="input-container">
                     <label class="form-label">Email</label>
-                    <input class="form-input" type="email" placeholder="Enter Your Email" name="email"/>
-                    <span>
-                    </span>
+                    <input name="email" class="form-input" type="email" placeholder="Enter Your Email" required/>
+          
                   </div>
                   <div class="input-container">
                     <label class="form-label">Organization</label>
-                    <input class="form-input" type="text" placeholder="Enter Your Organization" name="organization"/>
+                    <input name="organization" class="form-input" type="text" placeholder="Enter Your Organization" required/>
                   </div>
                   <div class="input-container">
                     <button type="submit" className="btn bt-pr1 btn-outline-primary btn-md btn-main mr-1 px-4 submit">
@@ -380,12 +406,16 @@ export default class Landpage extends Component {
                     </button>
                   </div>
                 </form>
-
               </div>
+              {this.state.successMessage && (
+              <div className="success-message">
+                {this.state.successMessage}
+              </div>
+            )}
             </Col>
             <Col md="6">
               <div class="pattern" >
-                <img src="/Assets/images/undraw_cloud_hosting.svg" alt="SVG Image Description" class="img-fluid"/>
+                <img src="/Assets/images/undraw_cloud_hosting.svg" alt="SVG Image Description" class="img-fluid" />
               </div>
             </Col>
 
@@ -464,8 +494,8 @@ export default class Landpage extends Component {
                   <p className="footer-brand pt-3">
                     <img
                       src="Assets/images/Xmigratelogo.png"
-                      width="130"
-                      height="60"
+                      width="100"
+                      height="40"
                       className="d-inline-block align-top"
                       alt="Xmigrate logo"
                     />

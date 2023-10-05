@@ -389,19 +389,19 @@ export default class Landpage extends Component {
 
                   <div class="input-container">
                     <label class="form-label">Fullname</label>
-                    <input name="full_name" class="form-input" type="text" placeholder="Enter Your Full Name" />
+                    <input name="full_name" class="form-input" type="text" placeholder="Enter Your Full Name" required/>
                     <span>
                     </span>
                   </div>
                   <div class="input-container">
                     <label class="form-label">Email</label>
-                    <input name="email" class="form-input" type="email" placeholder="Enter Your Email" />
+                    <input name="email" class="form-input" type="email" placeholder="Enter Your Email" required/>
                     <span>
                     </span>
                   </div>
                   <div class="input-container">
                     <label class="form-label">Organization</label>
-                    <input name="organization" class="form-input" type="text" placeholder="Enter Your Organization" />
+                    <input name="organization" class="form-input" type="text" placeholder="Enter Your Organization" required/>
                   </div>
                   <div class="input-container">
                     <button type="submit" className="btn bt-pr1 btn-outline-primary btn-md btn-main mr-1 px-4 submit">

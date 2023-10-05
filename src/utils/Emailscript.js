@@ -2,7 +2,7 @@ import emailjs from "emailjs-com";
 
 export const sendEmail = (fullName, email, organization) => {
   // Initialize email.js with your user ID
-  emailjs.init("QzP8eQAjeOqgPxYjI");
+  emailjs.init("X3Z_QUxaIZazE6d-l");
 
 
   // Prepare the email parameters
@@ -14,5 +14,5 @@ export const sendEmail = (fullName, email, organization) => {
   };
 
   // Send the email
-  return emailjs.send("service_aaeczza", "template_cm20zcn", emailParams);
+  return emailjs.send("service_czw1was", "template_93nsl5d", emailParams);
 };

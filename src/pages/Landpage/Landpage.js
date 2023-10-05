@@ -66,8 +66,8 @@ export default class Landpage extends Component {
           <Navbar.Brand className="navbar-brand col-xs-2">
             <img
               src="Assets/images/Xmigratelogo.png"
-              width="100"
-              height="40"
+              width="98"
+              height="46"
               className="d-inline-block align-top"
               alt="xmigrate logo"
             />
@@ -494,8 +494,8 @@ export default class Landpage extends Component {
                   <p className="footer-brand pt-3">
                     <img
                       src="Assets/images/Xmigratelogo.png"
-                      width="100"
-                      height="40"
+                      width="98"
+                      height="46"
                       className="d-inline-block align-top"
                       alt="Xmigrate logo"
                     />

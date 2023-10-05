@@ -226,7 +226,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 124px;
-  padding-bottom: 124px;
+  // padding-bottom: 124px;
 
   input:focus {
     outline: none;
@@ -343,55 +343,81 @@
   /* Shadows/shadow-xs */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
-.pattern{
+
+.pattern {
   padding-top: 35px;
 }
+
 @media (max-width: 991px) {
 
-    .form-head{
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-    
-  } 
-  
-  @media (min-width: 1200px) {
-    .form-head {
-      padding-top: 200px; /* Adjust padding for larger screens */
-      padding-bottom: 200px; /* Adjust padding for larger screens */
-    }
-  
-    .form {
-      max-width: 100%; /* Expand the form to the full width of the container */
-    }
-  
-    .form-title {
-      font-size: 36px; /* Increase font size for the title */
-      line-height: 48px; /* Adjust line height for the title */
-      max-width: fit-content;
-    }
-  
-    .form-sub-title {
-      font-size: 18px; /* Increase font size for the subtitle */
-      line-height: 28px; /* Adjust line height for the subtitle */
-    }
-  
-    .form-label {
-      font-size: 16px; /* Increase font size for labels */
-    }
-  
-    .form-input {
-      font-size: 16px; /* Increase font size for input fields */
-      line-height: 28px; /* Adjust line height for input fields */
-    }
-  
-    .input-container input {
-      padding: 14px 18px; /* Adjust padding for input fields */
-    }
-  
-    .submit {
-      font-size: 18px; /* Increase font size for the button */
-      padding: 14px 20px; /* Adjust padding for the button */
-    }
+  .form-head {
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
-  
+
+}
+
+.success-message {
+  max-width: 100%;
+  align-content: center;
+  color: #0082ff;
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  // padding-top: 35px;
+}
+
+@media (min-width: 1200px) {
+  .form-head {
+    padding-top: 200px;
+    /* Adjust padding for larger screens */
+    padding-bottom: 100px;
+    /* Adjust padding for larger screens */
+  }
+
+  .form {
+    max-width: 100%;
+    /* Expand the form to the full width of the container */
+  }
+
+  .form-title {
+    font-size: 36px;
+    /* Increase font size for the title */
+    line-height: 48px;
+    /* Adjust line height for the title */
+    max-width: fit-content;
+  }
+
+  .form-sub-title {
+    font-size: 18px;
+    /* Increase font size for the subtitle */
+    line-height: 28px;
+    /* Adjust line height for the subtitle */
+  }
+
+  .form-label {
+    font-size: 16px;
+    /* Increase font size for labels */
+  }
+
+  .form-input {
+    font-size: 16px;
+    /* Increase font size for input fields */
+    line-height: 28px;
+    /* Adjust line height for input fields */
+  }
+
+  .input-container input {
+    padding: 14px 18px;
+    /* Adjust padding for input fields */
+  }
+
+  .submit {
+    font-size: 18px;
+    /* Increase font size for the button */
+    padding: 14px 20px;
+    /* Adjust padding for the button */
+  }
+}

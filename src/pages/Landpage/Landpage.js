@@ -381,7 +381,7 @@ export default class Landpage extends Component {
             <Col md="6">
               <div class="form-head">
                 <form id="signupForm" class="form" form name="signupbeta" method="POST" onSubmit={this.handleSubmit}>
-                  <p class="form-title">Sign Up for Early Beta Access</p>
+                  <p class="form-title">Sign up for early beta access</p>
                   <h3 class="form-sub-title">Be the first to experience the new eBPF based DR technology</h3>
 
                   <div class="input-container">

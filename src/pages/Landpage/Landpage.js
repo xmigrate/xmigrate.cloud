@@ -397,7 +397,7 @@ export default class Landpage extends Component {
                     <label class="form-label">Organization</label>
                     <input name="organization" class="form-input" type="text" placeholder="Enter Your Organization" required/>
                   </div>
-                  <div class="input-container">
+                  <div class="input-container-btn">
                     <button type="submit" className="btn bt-pr1 btn-outline-primary btn-md btn-main mr-1 px-4 submit">
                       Sign Up
                     </button>

@@ -370,11 +370,84 @@
 }
 
 @media (min-width: 1200px) {
+  .img-fluid1{
+    max-width: 100%;
+  }
+  .input-container{
+    max-width: 65%;
+    
+  }
+  .pattern{
+
+    max-width: 60%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
   .form-head {
-    padding-top: 200px;
+    padding-top: 175px;
     /* Adjust padding for larger screens */
     padding-bottom: 100px;
     /* Adjust padding for larger screens */
+  }
+
+  .form {
+    max-width: 90%;
+    /* Expand the form to the full width of the container */
+  }
+
+  .form-title {
+    font-size: 28px;
+    /* Increase font size for the title */
+    line-height: 30px;
+    /* Adjust line height for the title */
+    max-width: fit-content;
+  }
+
+  .form-sub-title {
+    font-size: 12px;
+    /* Increase font size for the subtitle */
+    line-height: 24px;
+    /* Adjust line height for the subtitle */
+  }
+
+  .form-label {
+    font-size: 14px;
+    /* Increase font size for labels */
+  }
+
+  .form-input {
+    font-size: 14px;
+    /* Increase font size for input fields */
+    line-height: 20px;
+    /* Adjust line height for input fields */
+  }
+
+  .input-container input {
+    padding: 4px 10px;
+    /* Adjust padding for input fields */
+  }
+
+  .submit {
+    font-size: 18px;
+    /* Increase font size for the button */
+    padding: 14px 20px;
+    /* Adjust padding for the button */
+  }
+}
+@media (min-width: 1800px) {
+  .pattern{
+    padding-right: 55px;
+    padding-top: 135px;
+    padding-bottom: 110px;
+  }
+  .form-head {
+    padding-top: 320px;
+    /* Adjust padding for larger screens */
+    padding-bottom: 100px;
+    /* Adjust padding for larger screens */
+    padding-left: 200px;
   }
 
   .form {
@@ -383,7 +456,7 @@
   }
 
   .form-title {
-    font-size: 36px;
+    font-size: 50px;
     /* Increase font size for the title */
     line-height: 48px;
     /* Adjust line height for the title */
@@ -391,7 +464,7 @@
   }
 
   .form-sub-title {
-    font-size: 18px;
+    font-size: 25px;
     /* Increase font size for the subtitle */
     line-height: 28px;
     /* Adjust line height for the subtitle */
@@ -419,5 +492,10 @@
     /* Increase font size for the button */
     padding: 14px 20px;
     /* Adjust padding for the button */
+  }
+}
+@media (max-width: 800px) {
+  .pattern{
+    padding-right: 35px;
   }
 }

@@ -377,11 +377,8 @@ export default class Landpage extends Component {
               </Row>
             </Col>
           </Row>
-          <Row className="justify-content-md-center">
-            
+          <Row className="justify-content-md-center" class="row">
             <Col md="6">
-              {/* Display the success message */}
-            
               <div class="form-head">
                 <form id="signupForm" class="form" form name="signupbeta" method="POST" onSubmit={this.handleSubmit}>
                   <p class="form-title">Sign Up for Early Beta Access</p>
@@ -407,6 +404,7 @@ export default class Landpage extends Component {
                   </div>
                 </form>
               </div>
+              {/* Display the success message */}
               {this.state.successMessage && (
               <div className="success-message">
                 {this.state.successMessage}

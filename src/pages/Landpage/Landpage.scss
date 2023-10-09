@@ -203,6 +203,19 @@
   }
 
   @media (max-width: 991px) {
+    .input-container-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 20px;
+      align-self: stretch;
+      max-width: 100%;
+      
+    }
+    .input-container-btn .btn {
+      font-size: 24px;
+    }
+    
     #basic-nav-dropdown {
       display: inline !important;
     }
@@ -348,11 +361,36 @@
   padding-top: 35px;
 }
 
+.input-container-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  align-self: stretch;
+  max-width: 100%;
+  
+}
+.input-container-btn .btn {
+  font-size: 24px;
+}
+
 @media (max-width: 991px) {
 
   .form-head {
     padding-top: 35px;
     padding-bottom: 35px;
+  }
+  .input-container-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    align-self: stretch;
+    max-width: 65%;
+    
+  }
+  .input-container-btn .btn {
+    font-size: 24px;
   }
 
 }

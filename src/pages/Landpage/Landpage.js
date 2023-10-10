@@ -129,7 +129,7 @@ export default class Landpage extends Component {
           <Row className="justify-content-md-center">
             <Col md="8" className="banner pt-5">
               <div className="boxshad">
-                <Image src="Assets/images/Screen2.gif" fluid />
+                <Image src="Assets/images/screenshot1.png" fluid />
               </div>
             </Col>
           </Row>

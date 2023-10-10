@@ -129,7 +129,7 @@ export default class Landpage extends Component {
           <Row className="justify-content-md-center">
             <Col md="8" className="banner pt-5">
               <div className="boxshad">
-                <Image src="Assets/images/Screen2.gif" fluid />
+                <Image src="Assets/images/screenshot1.png" fluid />
               </div>
             </Col>
           </Row>
@@ -377,14 +377,11 @@ export default class Landpage extends Component {
               </Row>
             </Col>
           </Row>
-          <Row className="justify-content-md-center">
-            
+          <Row className="justify-content-md-center" class="row">
             <Col md="6">
-              {/* Display the success message */}
-            
               <div class="form-head">
                 <form id="signupForm" class="form" form name="signupbeta" method="POST" onSubmit={this.handleSubmit}>
-                  <p class="form-title">Sign Up for Early Beta Access</p>
+                  <p class="form-title">Sign up for early beta access</p>
                   <h3 class="form-sub-title">Be the first to experience the new eBPF based DR technology</h3>
 
                   <div class="input-container">
@@ -400,13 +397,14 @@ export default class Landpage extends Component {
                     <label class="form-label">Organization</label>
                     <input name="organization" class="form-input" type="text" placeholder="Enter Your Organization" required/>
                   </div>
-                  <div class="input-container">
+                  <div class="input-container-btn">
                     <button type="submit" className="btn bt-pr1 btn-outline-primary btn-md btn-main mr-1 px-4 submit">
                       Sign Up
                     </button>
                   </div>
                 </form>
               </div>
+              {/* Display the success message */}
               {this.state.successMessage && (
               <div className="success-message">
                 {this.state.successMessage}

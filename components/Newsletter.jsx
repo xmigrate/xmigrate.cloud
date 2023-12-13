@@ -1,49 +1,87 @@
-import React from 'react'
-import Image from 'next/image'
+"use client"
+import React, { Component } from 'react';
+import Image from 'next/image';
+import { sendEmail } from '../utils/Emailscript';
 
-const Newsletter = () => {
+class Newsletter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      successMessage: '', // Initialize successMessage to an empty string
+    };
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Get form data
+    // const fullName = e.target.elements.full_name.value;
+    const email = e.target.elements.email.value;
+    // console.log(email);
+    // const organization = e.target.elements.organization.value;
+
+    sendEmail(email)
+    
+      .then((response) => {
+        console.log('Email sent successfully!', response,email);
+        // Update the success message
+        this.setState({ successMessage: 'Thank you for signing up! ' });
+      })
+      .catch((error) => {
+        console.error('Email sending failed:', error);
+        // Handle error (e.g., show an error message)
+      });
+  };
+
+  render() {
     return (
-        <div>
-            <div className="flex justify-between gap-5 items-start max-md:flex-wrap mt-[300px] mx-5 sm:mx-[100px]">
-                <div className="flex grow basis-[0%] flex-col px-3">
-                    {/* <div className="shadow-2xl backdrop-blur-[7.5px] bg-indigo-200 bg-opacity-0 flex w-full flex-col justify-center items-stretch rounded-[60px]"> */}
-                    {/* <div className="border grow flex items-center justify-between gap-1.5 pl-3 pr-4 py-2.5 rounded-[60px] border-solid border-indigo-300 border-opacity-30 inner-shadow max-w-[218px]">
-                        <div className="justify-center text-indigo-300 text-center text-base leading-5 tracking-wide grow whitespace-nowrap my-auto">
-                            Enhanced Solutions
-                        </div>
-                        <Image
-                            src='/icons/arrow.svg'
-                            alt='logo'
-                            width={18}
-                            height={18}
-                            className='object-contain'
-                        />
-                    </div> */}
-                    {/* </div> */}
-                    <div className="justify-center text-5xl leading-[60px] tracking-tight bg-clip-text mt-8 max-md:text-4xl max-md:leading-[56px] text-white">
-                        <span className="text-violet-200 text-5xl font-bold font-['Inter'] leading-[60px]">Get started with</span><br /><span className="text-violet-300 text-5xl font-bold font-['Inter'] leading-[60px]">xmigrate</span>
-                    </div>
-                </div>
-                <div className="flex grow basis-[0%] flex-col items-center mt-7 px-5 self-end max-md:max-w-full">
-                    <div className="justify-center text-indigo-300 text-base leading-7 tracking-wide max-md:max-w-full">
-                        Subscribe to our newsletter and become a part of our thriving <br />
-                        community. Get access to exclusive content.
-                    </div>
-                    <div className="bg-slate-950 self-stretch flex flex-col justify-center items-stretch mt-3 sm:px-12 px-1 py-4 rounded-[60px] max-md:max-w-full">
-                        <div className="border flex flex-col justify-center items-stretch sm:rounded-[60px] rounded-[15px] border-solid border-indigo-300 border-opacity-20 max-md:max-w-full">
-                            <div className="flex flex-col justify-center items-stretch p-0.5 rounded-[60px] max-md:max-w-full">
-                                <div className="flex items-center justify-between gap-5 pl-5 pr-2 py-1.5 rounded-[60px] max-md:max-w-full max-md:flex-wrap max-md:pl-5">
-                                    <input className="justify-center bg-slate-950 border-none text-indigo-300 text-opacity-60 text-base grow whitespace-nowrap my-auto" placeholder="Enter your email address" type="text" />
-                                    <div className="justify-center text-violet-300 text-center text-base font-semibold leading-6 whitespace-nowrap items-stretch bg-slate-800 self-stretch grow px-7 py-5 rounded-[58px] max-md:px-5 cursor-pointer">
-                                        Get Started
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div>
+        <div className="flex justify-between gap-5 items-start max-md:flex-wrap mt-[300px] mx-5 sm:mx-[100px]">
+          <div className="flex grow basis-[0%] flex-col px-3">
+            <div className="justify-center text-5xl leading-[60px] tracking-tight bg-clip-text mt-8 max-md:text-4xl max-md:leading-[56px] text-white">
+              <span className="text-violet-200 text-5xl font-bold font-['Inter'] leading-[60px]">Get started with</span>
+              <br />
+              <span className="text-violet-300 text-5xl font-bold font-['Inter'] leading-[60px]">xmigrate</span>
             </div>
-            <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0 mt-[150px] px-5 sm:px-[120px]">
+          </div>
+          <div className="flex grow basis-[0%] flex-col items-center mt-7 px-5 self-end max-md:max-w-full">
+            <div className="justify-center text-indigo-300 text-base leading-7 tracking-wide max-md:max-w-full">
+              Subscribe to our newsletter and become a part of our thriving <br />
+              community. Get access to exclusive content.
+            </div>
+            <div className="bg-slate-950 self-stretch flex flex-col justify-center items-stretch mt-3 sm:px-12 px-1 py-4 rounded-[60px] max-md:max-w-full">
+              <div className="border flex flex-col justify-center items-stretch sm:rounded-[60px] rounded-[15px] border-solid border-indigo-300 border-opacity-20 max-md:max-w-full">
+                <div className="flex flex-col justify-center items-stretch p-0.5 rounded-[60px] max-md:max-w-full">
+                  <div className="flex items-center justify-between gap-5 pl-5 pr-2 py-1.5 rounded-[60px] max-md:max-w-full max-md:flex-wrap max-md:pl-5">
+                    <form id="signupForm" className="form" name="signupbeta" method="POST" onSubmit={this.handleSubmit}>
+                      {/* <p className="form-title">Sign up for early beta access</p>
+                      <h3 className="form-sub-title">Be the first to experience the new eBPF based DR technology</h3> */}
+
+                      {/* <div className="input-container">
+                        <label className="form-label">Full name</label>
+                        <input name="full_name" className="form-input" type="text" placeholder="Enter Your Full Name" required />
+                      </div> */}
+                      <div className="input-container">
+                        <label className="form-label">Email</label>
+                        <input name="email" className="form-input" type="email" placeholder="Enter Your Email" required />
+                      </div>
+                      {/* <div className="input-container">
+                        <label className="form-label">Organization</label>
+                        <input name="organization" className="form-input" type="text" placeholder="Enter Your Organization" required />
+                      </div> */}
+                      <div className="input-container-btn">
+                        <button type="submit" className="btn bt-pr1 btn-outline-primary btn-md btn-main mr-1 px-4 submit">
+                          Sign Up
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0 mt-[150px] px-5 sm:px-[120px]">
                 <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
                     <div className="flex-col overflow-hidden relative flex min-h-[261px] grow justify-center items-stretch max-md:max-w-full max-md:mt-7 rounded-xl hover:bg-slate-950">
                         <img
@@ -123,8 +161,9 @@ const Newsletter = () => {
                     </div>
                 </div>
             </div>
-        </div>
-    )
+      </div>
+    );
+  }
 }
 
-export default Newsletter
+export default Newsletter;

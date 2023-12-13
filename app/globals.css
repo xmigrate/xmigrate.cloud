@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x:visible; */
+}
+
+.backgroundContainer {
+    background-image: url('/image/bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+.bg-veil {
+    background-image: url('/image/veil.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.grad {
+    background-image: url('/image/gradient.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-color {
+    background-color: #030515;
+    /* height: 1035vh;  */
+    overflow: auto;
+}
+
+.shadow {
+    box-shadow: inset;
+}
+
+.bg-grad-2 {
+    background-image: url('/image/gradient2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-grad-3 {
+    background-image: url('/image/gradient3.png');
+    background-size: cover;
+    background-position: left;
+}
+
+.inner-shadow {
+    box-shadow: inset gray 0px 0px 35px -12px; 
+}
+
+.inner-shadow-sm {
+    box-shadow: inset #191a2f 0px 0px 50px -5px; 
+}
+
+/* .collapsible {
+    
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+  
+.content {
+    padding: 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+} */

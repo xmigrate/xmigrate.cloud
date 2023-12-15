@@ -17,10 +17,10 @@ const page = () => {
     <div className='bg-color'>
       <div className="grad">
         <div className="backgroundContainer">
-           <Navbar />
+          <Navbar />
           <Hero />
           <Grid />
-          <Flexbox /> 
+          <Flexbox />    
           {/* <Bottom /> */}
           <Faq />
           <div ref={newsletterRef}>

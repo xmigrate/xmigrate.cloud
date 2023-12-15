@@ -8,6 +8,7 @@
     box-sizing: border-box;
     /* overflow-x:visible; */
 }
+  
 
 .backgroundContainer {
     background-image: url('/image/bg.png');

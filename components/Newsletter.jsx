@@ -36,7 +36,7 @@ class Newsletter extends Component {
     render() {
         return (
             <div id="contact">
-                <div className="flex justify-between gap-5 items-start max-md:flex-wrap mt-[300px] mx-5 sm:mx-[100px]">
+                <div className="flex flex-col xl:flex-row justify-between gap-5 items-start max-md:flex-wrap mt-[300px] mx-5 lg:mx-[100px]">
                     <div className="flex grow basis-[0%] flex-col px-3">
                         <div className="justify-center text-5xl leading-[60px] tracking-tight bg-clip-text mt-8 max-md:text-4xl max-md:leading-[56px] text-white">
                             <span className="text-violet-200 text-5xl font-bold font-['Inter'] leading-[60px]">Get started with</span>
@@ -49,16 +49,14 @@ class Newsletter extends Component {
                             Subscribe to our newsletter and become a part of our thriving <br />
                             community. Get access to exclusive content.
                         </div>
-                        <div className="bg-slate-950 self-stretch flex flex-col justify-center items-stretch mt-3 sm:px-12 px-1 py-4 rounded-[60px] max-md:max-w-full">
-                            <div className="border flex flex-col justify-center items-stretch sm:rounded-[60px] rounded-[15px] border-solid border-indigo-300 border-opacity-20 max-md:max-w-full">
+                        <div className="bg-slate-950 self-stretch flex flex-col justify-center items-stretch mt-3 xl:px-12 px-1 py-4 rounded-[60px] max-md:max-w-full">
+                            <div className="border flex flex-col justify-center items-stretch xl:rounded-[60px] rounded-[15px] border-solid border-indigo-300 border-opacity-20 max-md:max-w-full">
                                 <div className="flex flex-col justify-center items-stretch p-0.5 rounded-[60px] max-md:max-w-full">
                                     <div className="flex items-center justify-between gap-5 pl-5 pr-2 py-1.5 rounded-[60px] max-md:max-w-full max-md:flex-wrap max-md:pl-5">
-
-                                        <div className="bg-slate-950 self-stretch flex flex-col justify-center items-stretch mt-3 sm:px-12 px-1 py-4 rounded-[60px] max-md:max-w-full">
+                                        <div className="bg-slate-950 self-stretch flex flex-col justify-center items-stretch mt-3 xl:px-12 px-1 py-4 rounded-[60px] max-md:max-w-full">
                                             <form id="signupForm" className="form" name="signupbeta" method="POST" onSubmit={this.handleSubmit}>
-
                                                 <div className="flex flex-col justify-center items-stretch p-0.5 rounded-[60px] max-md:max-w-full">
-                                                    <div className="flex items-center justify-between gap-2 pl-5 pr-2 py-1.5 rounded-[60px] max-md:max-w-full max-md:flex-wrap max-md:pl-5">
+                                                    <div className="flex items-center justify-between gap-2 sm:px-2 pl-5 pr-7 pb-2 -pt-1 rounded-[60px] max-md:max-w-full max-md:flex-wrap max-md:pl-5">
                                                         <input
                                                             name="email"
                                                             className="flex-1 px-4 py-2 border-none bg-slate-950 text-indigo-300 text-opacity-60 text-base grow whitespace-nowrap my-auto outline-none"
@@ -77,19 +75,14 @@ class Newsletter extends Component {
 
                                                         <button
                                                             type="submit"
-                                                            className="flex-1 px-7 py-5 text-violet-300 text-center text-base font-semibold leading-6 whitespace-nowrap items-stretch bg-slate-800 self-stretch grow rounded-[58px] max-md:px-5 cursor-pointer"
+                                                            className="flex-1 px-10 py-5 text-violet-300 text-center text-base font-semibold leading-6 whitespace-nowrap items-stretch bg-slate-800 self-stretch grow rounded-[58px] max-md:px-5 cursor-pointer"
                                                         >
                                                             Get Started
                                                         </button>
                                                     </div>
                                                 </div>
-
                                             </form>
                                         </div>
-
-
-
-
                                     </div>
                                 </div>
                             </div>

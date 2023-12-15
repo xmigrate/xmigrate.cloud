@@ -1,42 +1,52 @@
+"use client";
+
 import React from 'react'
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 // import { Link } from 'react-scroll'
 import Link from 'next/link';
 
 const About = () => {
+    const { ref: t1, inView: aboutVisible1 } = useInView();
+    const { ref: t2, inView: aboutVisible2 } = useInView();
+    const { ref: t3, inView: aboutVisible3 } = useInView();
+    const { ref: t4, inView: aboutVisible4 } = useInView();
+    const { ref: t5, inView: aboutVisible5 } = useInView();
+    const { ref: t6, inView: aboutVisible6 } = useInView();
     return (
         <div>
-            <div className="flex flex-row items-stretch justify-between gap-5 px-5 max-md:flex-wrap max-md:justify-between mx-0 sm:mx-[125px] mt-[200px]">
+            <div className="flex flex-row items-stretch justify-between gap-5 px-5 max-md:flex-wrap max-md:justify-between mx-0 sm:mx-[125px] mt-[200px] select-none">
                 <div className="flex basis-[0%] flex-col items-stretch self-start">
-                    <div className="justify-center text-xl leading-8 tracking-wide bg-clip-text whitespace-nowrap text-indigo-100">
+                    <motion.div ref={t1} initial={{ opacity: 0, y: -40 }} animate={aboutVisible1 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} className="justify-center text-xl leading-8 tracking-wide bg-clip-text whitespace-nowrap text-indigo-100">
                         Get started
-                    </div>
-                    <a href='#create' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-12 max-md:mt-10">
+                    </motion.div>
+                    <motion.a ref={t2} initial={{ opacity: 0, y: -40 }} animate={aboutVisible2 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} href='#create' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-12 max-md:mt-10 cursor-pointer">
                         Create Account
-                    </a>
-                    <a href='#signin' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7">
+                    </motion.a>
+                    <motion.a ref={t3} initial={{ opacity: 0, y: -40 }} animate={aboutVisible3 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} href='#signin' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7 cursor-pointer">
                         Sign In
-                    </a>
+                    </motion.a>
                 </div>
                 <div className='flex flex-row gap-[110px]'>
                     <div className="flex basis-[0%] flex-col items-stretch">
-                        <div className="justify-center text-xl leading-8 tracking-wide bg-clip-text whitespace-nowrap text-indigo-100">
+                        <motion.div ref={t1} initial={{ opacity: 0, y: -40 }} animate={aboutVisible1 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} className="justify-center text-xl leading-8 tracking-wide bg-clip-text whitespace-nowrap text-indigo-100">
                             Navigation
-                        </div>
-                        <a href='#home' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-11 max-md:mt-10">
+                        </motion.div>
+                        <motion.a ref={t2} initial={{ opacity: 0, y: -40 }} animate={aboutVisible2 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} href='#home' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-11 max-md:mt-10 cursor-pointer">
                             Home
-                        </a>
-                        <a href='#home' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7">
+                        </motion.a>
+                        <motion.a ref={t3} initial={{ opacity: 0, y: -40 }} animate={aboutVisible3 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} href='#home' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7 cursor-pointer">
                             About
-                        </a>
-                        <a href='#features' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7">
+                        </motion.a>
+                        <motion.a ref={t4} initial={{ opacity: 0, y: -40 }} animate={aboutVisible4 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} href='#features' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7 cursor-pointer">
                             Features
-                        </a>
-                        <a href='https://docs.xmigrate.cloud/en/latest/' target='_blank' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7">
+                        </motion.a>
+                        <motion.a ref={t5} initial={{ opacity: 0, y: -40 }} animate={aboutVisible5 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} href='https://docs.xmigrate.cloud/en/latest/' target='_blank' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7 cursor-pointer">
                             Docs
-                        </a>
-                        <Link href='#contact' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-6">
+                        </motion.a>
+                        <motion.a ref={t6} initial={{ opacity: 0, y: -40 }} animate={aboutVisible6 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} href='#contact' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-6 cursor-pointer">
                             Contact
-                        </Link>
+                        </motion.Link>
                     </div>
                     {/* <div className="self-start max-md:max-w-full">
                         <div className="gap-5 flex max-md:items-stretch max-md:gap-0">

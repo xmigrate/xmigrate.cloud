@@ -14,7 +14,7 @@ import React, { useRef } from 'react';
 const page = () => {
   const newsletterRef = useRef();
   return (
-    <div className='bg-color'>
+    <div className='bg-color scroll-smooth'>
       <div className="grad">
         <div className="backgroundContainer">
           <Navbar />

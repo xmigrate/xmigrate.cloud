@@ -3,7 +3,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
-// import { Link } from 'react-scroll'
+//import { Link } from 'react-scroll'
 import Link from 'next/link';
 
 const About = () => {
@@ -20,10 +20,10 @@ const About = () => {
                     <motion.div ref={t1} initial={{ opacity: 0, y: -40 }} animate={aboutVisible1 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} className="justify-center text-xl leading-8 tracking-wide bg-clip-text whitespace-nowrap text-indigo-100">
                         Get started
                     </motion.div>
-                    <motion.a ref={t2} initial={{ opacity: 0, y: -40 }} animate={aboutVisible2 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} href='#create' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-12 max-md:mt-10 cursor-pointer">
+                    <motion.a ref={t2} initial={{ opacity: 0, y: -40 }} animate={aboutVisible2 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} href='#contact' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-12 max-md:mt-10 cursor-pointer">
                         Create Account
                     </motion.a>
-                    <motion.a ref={t3} initial={{ opacity: 0, y: -40 }} animate={aboutVisible3 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} href='#signin' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7 cursor-pointer">
+                    <motion.a ref={t3} initial={{ opacity: 0, y: -40 }} animate={aboutVisible3 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} href='#contact' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7 cursor-pointer">
                         Sign In
                     </motion.a>
                 </div>
@@ -46,7 +46,7 @@ const About = () => {
                         </motion.a>
                         <motion.a ref={t6} initial={{ opacity: 0, y: -40 }} animate={aboutVisible6 ? { opacity: 1, y: 0 } : { opacity: 0 }} transition={{ duration: 0.6 }} href='#contact' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-6 cursor-pointer">
                             Contact
-                        </motion.Link>
+                        </motion.a>
                     </div>
                     {/* <div className="self-start max-md:max-w-full">
                         <div className="gap-5 flex max-md:items-stretch max-md:gap-0">

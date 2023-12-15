@@ -35,7 +35,7 @@ const Hero = () => {
             <motion.div ref={t1} initial={{ opacity: 0 }} animate={elementVisible1 ? { opacity: 1 } : { opacity: 0 }} transition={{ delay: 0.1 }} className=" text-center text-indigo-300 text-lg font-normal font-['Inter'] leading-[31px] px-[20px] lg:px-[160px] xl:px-[420px] ">Xmigrate(pronounced as cross-migrate) is an opensource tool for migrating your VM'sfrom anywhere to cloud and cloud to anywhere seamlessly.</motion.div>
             <div className="justify-center items-start gap-6 inline-flex mt-[32px]">
                 <motion.div ref={t1} initial={{ opacity: 0, x: -50 }} animate={elementVisible1 ? { opacity: 1, x: 0 } : { opacity: 0, x: 0 }} transition={{ delay: 0.5 }} className=" pl-[22.23px] pr-[21.77px] pt-[16.22px] pb-[16.78px] bg-slate-800 hover:bg-slate-700 rounded-[58px] justify-center items-center flex ">
-                    <a href='https://github.com/xmigrate/xmigrate' target="_blank" className="w-[103px] h-5 text-center text-violet-300 hover:text-violet-200 text-base font-semibold font-['Inter'] leading-snug">Start Migrate</a>
+                    <a href='#contact' className="w-[103px] h-5 text-center text-violet-300 hover:text-violet-200 text-base font-semibold font-['Inter'] leading-snug">Start Migrate</a>
                 </motion.div>
                 <motion.div ref={t1} initial={{ opacity: 0, x: 50 }} animate={elementVisible1 ? { opacity: 1, x: 0 } : { opacity: 0, x:0 }} transition={{ delay: 0.5 }} className=" pl-[25px] pr-[24.66px] pt-4 pb-[17.39px] bg-indigo-900 hover:bg-indigo-900 bg-opacity-20 rounded-[58px] border border-slate-800 justify-center items-center flex">
                     <a href='https://www.youtube.com/watch?v=FISJaoUIiOM' target="_blank" className="w-[90px] h-5 text-center text-violet-300 hover:text-violet-200 text-base font-semibold font-['Inter'] leading-snug">View Demo</a>
@@ -69,7 +69,7 @@ const Hero = () => {
                 </motion.div>
                 <motion.div ref={t2} initial={{ opacity: 0 }} animate={elementVisible2 ? { opacity: 1} : { opacity: 0}} transition={{ duration: 0.8 }} className="max-w-3xl sm:px-3 px-2 text-center text-indigo-300 text-lg leading-[31px] tracking-wide">Our block level replication of disk enables seamless migration of any type of workloads that are running on a VM. </motion.div>
             </div>
-            <motion.div ref={t3} initial={{ opacity: 0 }} animate={elementVisible3 ? { opacity: 1} : { opacity: 0}} transition={{ duration: 0.8 }} id='#about' className="text-center mt-12 pt-12 pb-18 text-indigo-100 text-4xl sm:text-5xl font-bold font-['Inter'] leading-[50px] sm:leading-[60px] max-w-[350px] sm:max-w-4xl">Don't settle on <br className='sm:hidden block'/>one cloud,<br/><span className="text-indigo-300"> have a hybrid strategy for recovery</span></motion.div>
+            <motion.div ref={t3} initial={{ opacity: 0 }} animate={elementVisible3 ? { opacity: 1} : { opacity: 0}} transition={{ duration: 0.8 }} id='features' className="text-center mt-12 pt-12 pb-18 text-indigo-100 text-4xl sm:text-5xl font-bold font-['Inter'] leading-[50px] sm:leading-[60px] max-w-[350px] sm:max-w-4xl">Don't settle on <br className='sm:hidden block'/>one cloud,<br/><span className="text-indigo-300"> have a hybrid strategy for recovery</span></motion.div>
             
         </div>
         //  </div>

@@ -1,6 +1,11 @@
 "use client"
+
 import React, { useState } from 'react';
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+
 const Faq = () => {
+    const { ref: s1, inView: faqVisible1 } = useInView();
     const faqData = [
         {
             question: 'How to get enrolled as a beta user?',
@@ -34,7 +39,7 @@ const Faq = () => {
     };
     return (
         <div className="flex justify-between gap-5 items-start max-md:flex-wrap mt-[210px] mx-1 sm:mx-[100px]">
-            <div className="flex grow basis-[0%] flex-col px-5 items-start">
+            <motion.div ref={s1} initial={{ opacity: 0, x: -50 }} animate={faqVisible1 ? { opacity: 1, x: 0 } : { opacity: 0 }} transition={{ duration: 0.8 }} className="flex grow basis-[0%] flex-col px-5 items-start">
                 <div className="shadow-2xl backdrop-blur-[7.5px] bg-indigo-200 bg-opacity-0 flex aspect-[1.83] flex-col justify-center items-stretch rounded-[60px]">
                     <div className="justify-center text-indigo-300 text-center text-base leading-5 tracking-wide border aspect-[1.83] items-stretch px-5 py-3 rounded-[60px] border-solid border-indigo-300 border-opacity-40 inner-shadow">
                         FAQ
@@ -45,8 +50,8 @@ const Faq = () => {
                     <span className="text-violet-300 text-5xl font-bold font-['Inter'] leading-[60px]"> <br /></span>
                     <span className="text-violet-300 text-5xl font-bold font-['Inter'] leading-[60px]">Questions</span>
                 </div>
-            </div>
-            <div className="flex grow basis-[0%] flex-col items-stretch mt-2.5 text-6xl">
+            </motion.div>
+            <motion.div ref={s1} initial={{ opacity: 0, x: 50 }} animate={faqVisible1 ? { opacity: 1, x: 0 } : { opacity: 0 }} transition={{ duration: 0.8 }} className="flex grow basis-[0%] flex-col items-stretch mt-2.5 text-6xl">
                 {faqData.map((item, index) => (
                     <div key={index} className="mb-3"> {/* Added margin bottom to create separation */}
                         <div className="flex items-center justify-between gap-5 px-5 max-md:max-w-full max-md:flex-wrap cursor-pointer">
@@ -76,7 +81,7 @@ const Faq = () => {
                         )}
                     </div>
                 ))}
-            </div>
+            </motion.div>
         </div>
     );
 };

@@ -20,9 +20,9 @@ const page = () => {
           <Navbar />
           <Hero />
           <Grid />
-          <Flexbox />    
+          <Flexbox />   
           {/* <Bottom /> */}
-          <Faq />
+           <Faq />
           <div ref={newsletterRef}>
             <Newsletter />
           </div>

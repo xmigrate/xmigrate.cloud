@@ -51,7 +51,7 @@ const Faq = () => {
                     <span className="text-violet-300 text-5xl font-bold font-['Inter'] leading-[60px]">Questions</span>
                 </div>
             </motion.div>
-            <motion.div ref={s1} initial={{ opacity: 0, x: 50 }} animate={faqVisible1 ? { opacity: 1, x: 0 } : { opacity: 0 }} transition={{ duration: 0.8 }} className="flex grow basis-[0%] flex-col items-stretch mt-2.5 text-6xl">
+            <motion.div ref={s1} initial={{ opacity: 0, x: 50 }} animate={faqVisible1 ? { opacity: 1, x: 0 } : { opacity: 0, x:0 }} transition={{ duration: 0.8 }} className="flex grow basis-[0%] flex-col items-stretch mt-2.5 text-6xl">
                 {faqData.map((item, index) => (
                     <div key={index} className="mb-3"> {/* Added margin bottom to create separation */}
                         <div className="flex items-center justify-between gap-5 px-5 max-md:max-w-full max-md:flex-wrap cursor-pointer">

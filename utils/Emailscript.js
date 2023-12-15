@@ -1,6 +1,6 @@
 import emailjs from "emailjs-com";
 
-export const sendEmail = (email) => {
+export const sendEmail = (email, organization) => {
   // Initialize email.js with your user ID
   emailjs.init("X3Z_QUxaIZazE6d-l");
 
@@ -10,6 +10,7 @@ export const sendEmail = (email) => {
     to_name: "xmigrate", // Replace with the recipient's name
     // name: fullName,
     email: email,
+    organization: organization,
     
   };
 

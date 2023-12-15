@@ -1,36 +1,57 @@
-// import React from 'react'
-import React, { useRef, useEffect } from 'react';
+"use client";
+
+import { React, useState } from 'react'
+//import React, { useRef, useEffect } from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 
 const Navbar = () => {
-  const newsletterRef = useRef();
+  const [menuOpen, setMenuOpen] = useState(false)
 
-  useEffect(() => {
-    const handleScrollToNewsletter = () => {
-      if (newsletterRef.current) {
-        newsletterRef.current.scrollIntoView({ behavior: 'smooth' });
-      }
-    };
-
-    // Attach the event listener for the Contact link
-    const contactLink = document.getElementById('contact-link');
-    if (contactLink) {
-      contactLink.addEventListener('click', handleScrollToNewsletter);
-    }
-
-    // Remove the event listener when the component is unmounted
-    return () => {
-      if (contactLink) {
-        contactLink.removeEventListener('click', handleScrollToNewsletter);
-      }
-    };
-  }, []);
+  const handleNav = () => {
+    setMenuOpen(!menuOpen);
+  }
   return (
-    <nav className='flex flex-row justify-between items-center sm:px-[120px] px-[40px] py-6 w-full'>
+    <nav className='flex flex-row justify-between items-center sm:px-[120px] pl-[20px] py-6 w-full'>
       <div id="home"className="text-violet-300 text-[32.24px] font-semibold">
         xmigrate
       </div >
+      <div onClick={handleNav} className='lg:hidden pr-10'>
+        <AiOutlineMenu size={25} />
+      </div>
+      <div className={
+        menuOpen ? "fixed z-30 left-0 top-0 w-[80%] sm:hidden h-screen  bg-gradient-to-t from-blue-500 to-purple-500 shadow-md backdrop-blur-lg backdrop-filter p-10 ease-in duration-500 bg-grad-3" : "fixed left-[-100%] top-0 bottom-0 p-10 ease-in duration-500"
+      }>
+        <div className='flex-col py-8'>
+          <ul>
+            <Link href="#">
+              <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer text-indigo-300 text-3xl font-bold text-center '>
+                About
+                {/* <hr className=" h-[5px] mx-[60px] border-0 my-1 bg-gray-800 " /> */}
+              </li>
+            </Link>
+            <Link href="#">
+              <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer text-indigo-300 text-3xl font-bold text-center'>
+                Docs
+                {/* <hr className=" h-[5px] mx-[70px] border-0 my-1 bg-gray-800 " /> */}
+              </li>
+            </Link>
+            <Link href="#">
+              <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer text-indigo-300 text-3xl font-bold text-center'>
+                Features
+                {/* <hr className=" h-[5px] mx-[40px] border-0 my-1 bg-gray-800 " /> */}
+              </li>
+            </Link>
+            <Link href="#">
+              <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer text-indigo-300 text-3xl font-bold text-center'>
+                Contact
+                {/* <hr className=" h-[5px] mx-[50px] border-0 my-1 bg-gray-800 " /> */}
+              </li>
+            </Link>
+          </ul>
+        </div>
+      </div>
       <div className=" rounded-[60px] border border-indigo-300 border-opacity-20 hidden lg:block hover:p">
         <div className="w-[420px] h-[55.19px] relative bg-white bg-opacity-[0.01] rounded-[60px] shadow-inner backdrop-blur-[0px]">
           <div className="w-[43.47px] h-[19.19px] left-[30px] top-[18px] absolute justify-center items-center inline-flex">
@@ -51,7 +72,7 @@ const Navbar = () => {
           {/* <div className="w-[594.38px] h-[55.19px] left-0 top-0 absolute rounded-[60px] border border-indigo-300 border-opacity-10" /> */}
         </div>
       </div>
-      <div className='hidden sm:block'>
+      <div className='hidden lg:block'>
         <div className="max-w-[240px] grow h-[55px] rounded-[56px] border border-indigo-300 border-opacity-20 flex flex-row items-center px-[27px] py-[17px] bg-veil">
           <Link href='#contact' className="text-violet-300 text-base font-normal leading-tight ">Get Started</Link>
           <div className="w-1 h-1 bg-indigo-300 rounded mx-[10px]" />

@@ -35,7 +35,7 @@ class Newsletter extends Component {
 
     render() {
         return (
-            <div>
+            <div id="contact">
                 <div className="flex justify-between gap-5 items-start max-md:flex-wrap mt-[300px] mx-5 sm:mx-[100px]">
                     <div className="flex grow basis-[0%] flex-col px-3">
                         <div className="justify-center text-5xl leading-[60px] tracking-tight bg-clip-text mt-8 max-md:text-4xl max-md:leading-[56px] text-white">

@@ -1,4 +1,6 @@
 import React from 'react'
+// import { Link } from 'react-scroll'
+import Link from 'next/link';
 
 const About = () => {
     return (
@@ -23,7 +25,7 @@ const About = () => {
                         <a href='#home' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-11 max-md:mt-10">
                             Home
                         </a>
-                        <a href='#about' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7">
+                        <a href='#home' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7">
                             About
                         </a>
                         <a href='#features' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7">
@@ -32,9 +34,9 @@ const About = () => {
                         <a href='https://docs.xmigrate.cloud/en/latest/' target='_blank' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-7">
                             Docs
                         </a>
-                        <a href='#contact' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-6">
+                        <Link href='#contact' className="justify-center text-indigo-300 hover:text-indigo-200 text-lg leading-7 tracking-wide whitespace-nowrap mt-6">
                             Contact
-                        </a>
+                        </Link>
                     </div>
                     {/* <div className="self-start max-md:max-w-full">
                         <div className="gap-5 flex max-md:items-stretch max-md:gap-0">

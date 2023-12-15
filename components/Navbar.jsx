@@ -1,10 +1,34 @@
-import React from 'react'
+// import React from 'react'
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image'
+import Link from 'next/link';
 
 const Navbar = () => {
+  const newsletterRef = useRef();
+
+  useEffect(() => {
+    const handleScrollToNewsletter = () => {
+      if (newsletterRef.current) {
+        newsletterRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    // Attach the event listener for the Contact link
+    const contactLink = document.getElementById('contact-link');
+    if (contactLink) {
+      contactLink.addEventListener('click', handleScrollToNewsletter);
+    }
+
+    // Remove the event listener when the component is unmounted
+    return () => {
+      if (contactLink) {
+        contactLink.removeEventListener('click', handleScrollToNewsletter);
+      }
+    };
+  }, []);
   return (
     <nav className='flex flex-row justify-between items-center sm:px-[120px] px-[40px] py-6 w-full'>
-      <div className="text-violet-300 text-[32.24px] font-semibold">
+      <div id="home"className="text-violet-300 text-[32.24px] font-semibold">
         xmigrate
       </div >
       <div className=" rounded-[60px] border border-indigo-300 border-opacity-20 hidden lg:block hover:p">
@@ -18,18 +42,18 @@ const Navbar = () => {
           </div>
           <div className="w-1 h-1 left-[190px] top-[25.59px] absolute bg-indigo-300 rounded" />
           <div className="w-[62.28px] h-[19.19px] left-[220px] top-[18px] absolute justify-center items-center inline-flex">
-            <a href='#features' className="w-[62.48px] h-[19px] text-violet-300 text-sm leading-tight tracking-tight hover:text-violet-200">Features</a>
+            <Link href='#features' className="w-[62.48px] h-[19px] text-violet-300 text-sm leading-tight tracking-tight hover:text-violet-200">Features</Link>
           </div>
           <div className="w-1 h-1 left-[300px] top-[25.59px] absolute bg-indigo-300 rounded" />
           <div className="w-[57.28px] h-[19.19px] left-[330px] top-[18px] absolute justify-center items-center inline-flex">
-            <a href='#contact' className="w-[57.48px] h-[19px] text-violet-300 text-sm leading-tight tracking-tight hover:text-violet-200">Contact</a>
+            <Link  href='#contact' className="w-[57.48px] h-[19px] text-violet-300 text-sm leading-tight tracking-tight hover:text-violet-200">Contact</Link>
           </div>
           {/* <div className="w-[594.38px] h-[55.19px] left-0 top-0 absolute rounded-[60px] border border-indigo-300 border-opacity-10" /> */}
         </div>
       </div>
       <div className='hidden sm:block'>
         <div className="max-w-[240px] grow h-[55px] rounded-[56px] border border-indigo-300 border-opacity-20 flex flex-row items-center px-[27px] py-[17px] bg-veil">
-          <div className="text-violet-300 text-base font-normal leading-tight ">Get Started</div>
+          <Link href='#contact' className="text-violet-300 text-base font-normal leading-tight ">Get Started</Link>
           <div className="w-1 h-1 bg-indigo-300 rounded mx-[10px]" />
           <div className=" text-indigo-300 text-opacity-60 text-[15px] leading-tight">its free</div>
           <div className="relative flex-col justify-start items-start inline-flex ml-1" />

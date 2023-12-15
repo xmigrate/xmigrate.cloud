@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+// import React from 'react'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Grid from '@/components/Grid'
@@ -8,8 +9,10 @@ import Faq from '@/components/Faq'
 import Newsletter from '@/components/Newsletter'
 import About from '@/components/About'
 import Footer from '@/components/Footer'
+import React, { useRef } from 'react';
 
 const page = () => {
+  const newsletterRef = useRef();
   return (
     <div className='bg-color'>
       <div className="grad">
@@ -20,7 +23,9 @@ const page = () => {
           <Flexbox /> 
           {/* <Bottom /> */}
           <Faq />
-          <Newsletter />
+          <div ref={newsletterRef}>
+            <Newsletter />
+          </div>
           <About />
           <Footer />
         </div>

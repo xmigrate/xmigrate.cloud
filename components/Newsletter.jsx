@@ -1,7 +1,7 @@
 "use client";
 import { React, useEffect, useState, Component } from "react";
 import { sendEmail } from "../utils/Emailscript";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Newsletter = () => {
@@ -40,12 +40,8 @@ const Newsletter = () => {
           className="flex grow basis-[0%] flex-col px-3"
         >
           <div className="justify-center text-5xl leading-[60px] tracking-tight bg-clip-text mt-8 max-md:text-4xl max-md:leading-[56px] text-white">
-            <span className="text-violet-200 text-5xl font-bold font-['Inter'] leading-[60px]">
-              Get started with
-            </span>
-            <br />
-            <span className="text-violet-300 text-5xl font-bold font-['Inter'] leading-[60px]">
-              xmigrate
+            <span className="bg-gradient-to-b from-indigo-50 to-indigo-300 inline-block text-transparent bg-clip-text text-5xl font-bold leading-[60px] max-w-sm">
+              Get started with xmigrate
             </span>
           </div>
         </motion.div>
@@ -54,11 +50,12 @@ const Newsletter = () => {
             Subscribe to our newsletter and become a part of our thriving <br />
             community. Get access to exclusive content.
           </div>
-          <div className="bg-slate-950 self-stretch flex flex-col justify-center items-stretch  xl:px-12 px-1 py-4 rounded-[60px] max-md:max-w-full">
-            <div className="border flex flex-col justify-center items-stretch xl:rounded-[60px] rounded-[15px] border-solid border-indigo-300 border-opacity-20 max-md:max-w-full">
-              <div className="flex flex-col justify-center items-stretch p-0.5 rounded-[60px] max-md:max-w-full">
-                <div className="flex items-center justify-center gap-5 pl-5 pr-2 py-1.5 rounded-[60px] max-md:max-w-full max-md:flex-wrap max-md:pl-5">
-                  <div className="bg-slate-950 self-stretch flex flex-col justify-center items-stretch  xl:px-12 px-1 py-4 rounded-[60px] max-md:max-w-full">
+          {/* <div className="bg-slate-950 self-stretch flex flex-col justify-center items-stretch xl:px-12 px-1 py-4 rounded-[60px] max-md:max-w-full"> */}
+            <div className="border flex flex-col justify-center items-stretch xl:rounded-[40px] rounded-[15px] border-solid border-indigo-300 border-opacity-20 max-md:max-w-full mt-12 ">
+
+              <div className="flex flex-col justify-center items-stretch rounded-[40px] max-md:max-w-full ">
+                <div className="flex items-center justify-center gap-5 rounded-[40px] max-md:max-w-full max-md:flex-wrap max-md:pl-5 ">
+                  <div className="bg-slate-950 self-stretch flex flex-col justify-center items-stretch  xl:px-12 px-1 py-4 rounded-[40px] max-md:max-w-full ">
                     <div>
                       {isSuccess ? (
                         <p className="justify-center text-center text-indigo-300 font-semibold">Thank you for joining us!</p>
@@ -71,29 +68,27 @@ const Newsletter = () => {
                           onSubmit={handleSubmit}
                         >
                           <div className="flex flex-col justify-center items-stretch p-0.5 rounded-[60px] max-md:max-w-full">
-                            <div className="flex items-center justify-between gap-2 sm:px-2 pl-5 pr-7 pb-2 -pt-1 rounded-[60px] max-md:max-w-full max-md:flex-wrap max-md:pl-5">
+                            <div className="flex flex-col items-center justify-between gap-2 sm:px-2 pl-5 pr-7 pb-2 -pt-1 rounded-[60px] max-md:max-w-full max-md:flex-wrap max-md:pl-5">
                               <input
                                 name="email"
-                                className="flex-1 px-4 py-2 border-none bg-slate-950 text-indigo-300 text-opacity-60 text-base grow whitespace-nowrap my-auto outline-none"
+                                className="flex-1 px-4 py-2 border-none bg-slate-950 text-indigo-200 text-base grow whitespace-nowrap my-auto outline-none"
                                 placeholder="Enter your email address"
                                 type="email"
                                 required
                               />
-
                               <input
                                 name="organization"
-                                className="flex-1 px-4 py-2 border-none bg-slate-950 text-indigo-300 text-opacity-60 text-base grow whitespace-nowrap my-auto outline-none"
+                                className="flex-1 px-4 py-2 border-none bg-slate-950 text-indigo-200 text-base grow whitespace-nowrap my-auto outline-none"
                                 placeholder="Enter your organization"
                                 type="text"
                                 required
                               />
-
-                              <button
+                              <div
                                 type="submit"
                                 className="flex-1 px-10 py-5 text-violet-300 text-center text-base font-semibold leading-6 whitespace-nowrap items-stretch bg-slate-800 self-stretch grow rounded-[58px] max-md:px-5 cursor-pointer"
                               >
                                 Get Started
-                              </button>
+                              </div>
                             </div>
                           </div>
                         </form>
@@ -102,7 +97,7 @@ const Newsletter = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </div>
@@ -137,7 +132,7 @@ const Newsletter = () => {
                     <img
                       loading="lazy"
                       src="/icons/discord.svg"
-                      className="aspect-[1.57] object-cover object-center w-[185px] justify-center items-center overflow-hidden shrink-0 max-w-full "
+                      className="aspect-[1.57] object-cover object-center flex flex-row justify-center items-center overflow-hidden shrink-0 max-w-full "
                     />
                   </div>
                 </div>

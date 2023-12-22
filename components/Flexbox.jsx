@@ -16,8 +16,8 @@ const Flexbox = () => {
                 {/* <div className=" w-[273.20px] h-[36.39px] justify-center items-center inline-flex"> */}
                 <div className="w-[273px] h-[36.39px] relative bg-opacity-0 rounded-[60px] shadow-inner backdrop-blur-[15px] flex-row flex justify-center items-center border border-indigo-300 border-opacity-20">
                     {/* <div className="w-[273.20px] h-[36.39px] rounded-[60px] border border-indigo-300 border-opacity-20 flex flex-row"> */}
-                    <div className="text-center text-violet-300 text-base font-normal font-['Inter'] leading-tight tracking-tight">New Update:</div>
-                    <div className="text-center text-indigo-300 text-base font-normal font-['Inter'] leading-tight tracking-tight ml-2 mr-1">AI Integration</div>
+                    <div className="text-center text-violet-300 text-base font-normal leading-tight tracking-tight">New Update:</div>
+                    <div className="text-center text-indigo-300 text-base font-normal leading-tight tracking-tight ml-2 mr-1">AI Integration</div>
                     <Image
                         src='/icons/arrow.svg'
                         alt='logo'
@@ -28,8 +28,8 @@ const Flexbox = () => {
                     <div className='w-[273px] h-[36.39px] absolute rounded-[60px] shadow-inner backdrop-blur-2xl' />
                 </div>
             </motion.div>
-            <motion.div ref={f2} initial={{ opacity: 0 }} animate={flexVisible2 ? { opacity: 1 } : { opacity: 0 }} transition={{ delay: 0.2 }} className="text-center text-violet-200 text-[46.88px] font-bold font-['Inter'] leading-[60px] mt-4">Supercharge your limits</motion.div>
-            <motion.div ref={f2} initial={{ opacity: 0 }} animate={flexVisible2 ? { opacity: 1 } : { opacity: 0 }} transition={{ delay: 0.2 }} className="text-center text-indigo-300 text-sm font-normal font-['Inter'] leading-normal tracking-tight mt-10 mb-[60px]">Xmigrate team invite everyone togive this tool a try and give feedback.<br className='hidden sm:block' /> We are inviting each one of your contribution</motion.div>
+            <motion.div ref={f2} initial={{ opacity: 0 }} animate={flexVisible2 ? { opacity: 1 } : { opacity: 0 }} transition={{ delay: 0.2 }} className="text-center bg-gradient-to-b from-indigo-50 to-indigo-300 inline-block text-transparent bg-clip-text text-[46.88px] font-bold leading-[60px] mt-4">Supercharge your limits</motion.div>
+            <motion.div ref={f2} initial={{ opacity: 0 }} animate={flexVisible2 ? { opacity: 1 } : { opacity: 0 }} transition={{ delay: 0.2 }} className="text-center text-indigo-300 text-sm font-normal leading-normal tracking-tight mt-10 mb-[60px]">Xmigrate team invite everyone togive this tool a try and give feedback.<br className='hidden sm:block' /> We are inviting each one of your contribution</motion.div>
             <div className="flex flex-col items-stretch">
                 <div className="w-full px-2 max-md:max-w-full max-w-screen-xl:max-w-full max-w-screen-xl">
                     <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
@@ -43,20 +43,20 @@ const Flexbox = () => {
                                     className="flex grow flex-col justify-end items-stretch w-full rounded-3xl max-md:mt-7 bg-gradient-to-b from-violet-400 to-violet-500"
                                 >
                                     {/* <div className="border flex flex-col items-stretch rounded-3xl border-solid border-white border-opacity-10 w-full"> */}
-                                        <div className="flex-col justify-center items-stretch overflow-hidden relative flex w-full px-[20px] py-12 max-md:px-5">
-                                            {/* <img
+                                    <div className="flex-col justify-center items-stretch overflow-hidden relative flex w-full px-[20px] py-12 max-md:px-5">
+                                        {/* <img
                                                 loading="lazy"
                                                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b0bee977e942ba8c2a171c532bb728b17842569a8a1523dd38d453a2e796f13?"
                                                 className="absolute h-full object-cover object-left inset-0"
                                             /> */}
-                                            <div className="relative justify-center text-slate-950 text-center text-2xl font-semibold leading-8 ">
-                                                Supports migration of all the major Linux operating systems
-                                            </div>
-                                            <div className="relative justify-center text-slate-950 text-center text-base leading-6 tracking-wide mt-7">
-                                                Get servers restored to any of the supported cloud which performs as same as servers build and deployed natively on cloud
-                                            </div>
-                                            {/* Additional content */}
+                                        <div className="relative justify-center text-slate-950 text-center text-2xl font-semibold leading-8 ">
+                                            Supports migration of all the major Linux operating systems
                                         </div>
+                                        <div className="relative justify-center text-slate-950 text-center text-base leading-6 tracking-wide mt-7">
+                                            Get servers restored to any of the supported cloud which performs as same as servers build and deployed natively on cloud
+                                        </div>
+                                        {/* Additional content */}
+                                    </div>
                                     {/* </div> */}
                                 </motion.div>
                             </div>
@@ -91,8 +91,12 @@ const Flexbox = () => {
                                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/cb8d22d138831528621cea3537bd5cd2593ce6debcb76f710a8b168065659e43?"
                                         className="absolute h-full w-full object-cover object-center inset-0"
                                     />
-                                    <div className="relative justify-center text-4xl font-bold leading-10 bg-clip-text whitespace-nowrap mt-16 mb-10 max-md:mt-10 text-white">
-                                        xmigrate
+                                    <div className="relative justify-center whitespace-nowrap mt-16 mb-10 max-md:mt-10">
+                                        <Image
+                                            src='/icons/logo.svg'
+                                            width={150}
+                                            height={150}
+                                        />
                                     </div>
                                 </motion.div>
                             </div>
@@ -105,23 +109,23 @@ const Flexbox = () => {
                             className="flex flex-col items-stretch w-3/12 max-md:w-full max-md:ml-0 ">
                             <div className="flex grow flex-col justify-end items-stretch w-full rounded-3xl max-md:mt-7 bg-gradient-to-b from-violet-400 to-violet-500 px-[16px]">
                                 {/* <div className="border flex flex-col items-stretch rounded-3xl border-solid border-white border-opacity-10 w-full"> */}
-                                    <div className="flex-col justify-center items-stretch overflow-hidden relative flex w-full py-12 max-md:px-5">
-                                        {/* <img
+                                <div className="flex-col justify-center items-stretch overflow-hidden relative flex w-full py-12 max-md:px-5">
+                                    {/* <img
                                             loading="lazy"
                                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b0bee977e942ba8c2a171c532bb728b17842569a8a1523dd38d453a2e796f13?"
                                             className="absolute h-full w-full object-cover object-left inset-0"
                                         /> */}
-                                        <div className="relative justify-center pr-5 text-slate-950 text-center text-2xl font-semibold leading-8 max-md:mt-10 px-5">
-                                            Best user experience
-                                        </div>
-                                        <div className="relative justify-center text-slate-950 text-center text-base leading-6 tracking-wide mt-7 ">
-                                            You don't need to be a migration specialist anymore. Be it a junior engineer, do the migrations at ease.
-                                        </div>
-                                        {/* <div className="relative justify-center text-slate-950 text-center text-base leading-6 tracking-wide mt-1">
+                                    <div className="relative justify-center pr-5 text-slate-950 text-center text-2xl font-semibold leading-8 max-md:mt-10 px-5">
+                                        Best user experience
+                                    </div>
+                                    <div className="relative justify-center text-slate-950 text-center text-base leading-6 tracking-wide mt-7 ">
+                                        You don't need to be a migration specialist anymore. Be it a junior engineer, do the migrations at ease.
+                                    </div>
+                                    {/* <div className="relative justify-center text-slate-950 text-center text-base leading-6 tracking-wide mt-1">
                                             professional-quality <br />
                                             websites
                                         </div> */}
-                                    </div>
+                                </div>
                                 {/* </div> */}
                             </div>
                         </motion.div>

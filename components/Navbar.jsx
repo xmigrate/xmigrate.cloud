@@ -1,10 +1,11 @@
 "use client";
 
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 //import React, { useRef, useEffect } from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { motion, transform } from "framer-motion"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -12,16 +13,31 @@ const Navbar = () => {
   const handleNav = () => {
     setMenuOpen(!menuOpen);
   }
+  useEffect(() => {
+    document.querySelectorAll('button').forEach(button => {
+      const textContent = button.textContent.trim();
+      const transformedText = textContent
+        .split('')
+        .map(char => (char === ' ' ? '<span>&nbsp;</span>' : `<span>${char}</span>`))
+        .join('');
+
+      button.innerHTML = `<div>${transformedText}</div>`;
+    });
+  }, []);
   return (
     <nav className='flex flex-row justify-between items-center sm:px-[120px] pl-[20px] py-6 w-full'>
-      <div id="home"className="text-violet-300 text-[32.24px] font-semibold">
-        xmigrate
+      <div id="home" className='pr-20'>
+        <Image
+          src='/icons/logo.svg'
+          width={80}
+          height={80}
+          alt='xmigrate' />
       </div >
-      <div onClick={handleNav} className='lg:hidden pr-10'>
-        <AiOutlineMenu size={25} />
+      <div onClick={handleNav} className='lg:hidden pr-10 cursor-pointer'>
+        <AiOutlineMenu size={25} color='white' />
       </div>
       <div className={
-        menuOpen ? "fixed z-30 left-0 top-0 w-[80%] sm:hidden h-screen  bg-gradient-to-t from-blue-500 to-purple-500 shadow-md backdrop-blur-lg backdrop-filter p-10 ease-in duration-500 bg-grad-3" : "fixed left-[-100%] top-0 bottom-0 p-10 ease-in duration-500"
+        menuOpen ? "fixed z-30 left-0 top-0 w-[80%] lg:hidden h-screen bg-gradient-to-t from-blue-500 to-purple-500 shadow-md backdrop-blur-lg backdrop-filter p-10 ease-in duration-500 bg-grad-3" : "fixed z-30 left-[-100%] top-0 bottom-0 p-10 ease-in duration-500"
       }>
         <div className='flex-col py-8'>
           <ul>
@@ -67,27 +83,31 @@ const Navbar = () => {
           </div>
           <div className="w-1 h-1 left-[300px] top-[25.59px] absolute bg-indigo-300 rounded" />
           <div className="w-[57.28px] h-[19.19px] left-[330px] top-[18px] absolute justify-center items-center inline-flex">
-            <Link  href='#contact' className="w-[57.48px] h-[19px] text-violet-300 text-sm leading-tight tracking-tight hover:text-violet-200">Contact</Link>
+            <Link href='#contact' className="w-[57.48px] h-[19px] text-violet-300 text-sm leading-tight tracking-tight hover:text-violet-200">Contact</Link>
           </div>
           {/* <div className="w-[594.38px] h-[55.19px] left-0 top-0 absolute rounded-[60px] border border-indigo-300 border-opacity-10" /> */}
         </div>
       </div>
-      <div className='hidden lg:block'>
-        <div className="max-w-[240px] grow h-[55px] rounded-[56px] border border-indigo-300 border-opacity-20 flex flex-row items-center px-[27px] py-[17px] bg-veil">
-          <Link href='#contact' className="text-violet-300 text-base font-normal leading-tight ">Get Started</Link>
+      <div className='hidden lg:block button-hov'>
+        <Link href='#contact' className="max-w-[240px] grow h-[55px] rounded-[56px] border border-indigo-300 border-opacity-20 flex flex-row items-center px-[27px] py-[17px] bg-veil">
+          <div className="text-violet-300 text-base font-normal leading-tight">Get Started</div>
           <div className="w-1 h-1 bg-indigo-300 rounded mx-[10px]" />
-          <div className=" text-indigo-300 text-opacity-60 text-[15px] leading-tight">its free</div>
-          <div className="relative flex-col justify-start items-start inline-flex ml-1" />
-          <Image
-            src='/icons/arrow.svg'
-            alt='logo'
-            width={18}
-            height={18}
-            className='object-contain'
-          />
-        </div>
+          <>
+            <button className=" text-indigo-300 text-opacity-60 text-[15px] leading-tight">its free</button>
+            {/* <div className="relative flex-col justify-start items-start inline-flex ml-1" /> */}
+            <div className='svg-container'>
+              <Image
+                src='/icons/arrow.svg'
+                alt='logo'
+                width={18}
+                height={18}
+                className='object-contain ml-1'
+              />
+            </div>
+          </>
+        </Link>
       </div>
-    </nav>
+    </nav >
   )
 }
 

@@ -31,7 +31,7 @@ const Newsletter = () => {
 
   return (
     <div id="contact">
-      <div className="flex flex-col xl:flex-row justify-between gap-5 items-start max-md:flex-wrap mt-[300px] mx-5 lg:mx-[100px]">
+      <div className="flex flex-col xl:flex-row justify-between gap-5 sm:items-center xs:justify-center xl:items-start max-md:flex-wrap mt-[300px] mx-5 lg:mx-[100px]">
         <motion.div
           ref={s1}
           initial={{ opacity: 0, x: -50 }}
@@ -45,14 +45,13 @@ const Newsletter = () => {
             </span>
           </div>
         </motion.div>
-        <div className="flex grow basis-[0%] flex-col items-center mt-7 px-5 self-end max-md:max-w-full">
+        <div className="flex grow basis-[0%] flex-col items-center mt-7 px-5 xl:self-end max-md:max-w-full">
           <div className="justify-center text-indigo-300 text-base leading-7 tracking-wide max-md:max-w-full">
             Subscribe to our newsletter and become a part of our thriving <br />
             community. Get access to exclusive content.
           </div>
           {/* <div className="bg-slate-950 self-stretch flex flex-col justify-center items-stretch xl:px-12 px-1 py-4 rounded-[60px] max-md:max-w-full"> */}
-            <div className="border flex flex-col justify-center items-stretch xl:rounded-[40px] rounded-[15px] border-solid border-indigo-300 border-opacity-20 max-md:max-w-full mt-12 ">
-
+          {/* <div className="border flex flex-col justify-center items-stretch xl:rounded-[40px] rounded-[15px] border-solid border-indigo-300 border-opacity-20 max-md:max-w-full mt-12 ">
               <div className="flex flex-col justify-center items-stretch rounded-[40px] max-md:max-w-full ">
                 <div className="flex items-center justify-center gap-5 rounded-[40px] max-md:max-w-full max-md:flex-wrap max-md:pl-5 ">
                   <div className="bg-slate-950 self-stretch flex flex-col justify-center items-stretch  xl:px-12 px-1 py-4 rounded-[40px] max-md:max-w-full ">
@@ -96,14 +95,34 @@ const Newsletter = () => {
                     </div>
                   </div>
                 </div>
+              </div> */}
+          {/* </div> */}
+          {/* </div> */}
+          <div className="bg-slate-950 p-2 flex max-w-lg w-full flex-col justify-center items-stretch rounded-[60px] mt-7 conic">
+            <div className="bg-slate-950 flex max-w-lg w-full flex-col justify-center items-stretch rounded-[60px]">
+              <div className="border flex w-full flex-col justify-center items-stretch rounded-[60px] border-solid border-indigo-300 border-opacity-20 max-md:max-w-full">
+                <div className="flex w-full flex-col justify-center items-stretch p-0.5 rounded-[60px] max-md:max-w-full">
+                  <div className="flex items-center justify-between gap-5 pl-8 pr-2 py-1.5 rounded-[60px] max-md:max-w-full max-md:flex-wrap max-md:pl-5">
+                    <div className="justify-center text-indigo-300 text-opacity-60 text-base sm:my-auto my-2.5">
+                      Enter your email address
+                    </div>
+                    <div className="hidden sm:block justify-center text-violet-300 text-center text-base font-semibold leading-6 whitespace-nowrap items-stretch bg-slate-800 self-stretch px-7 py-5 rounded-[58px] max-md:px-5">
+                      Get Started
+                    </div>
+                  </div>
+                </div>
               </div>
-            {/* </div> */}
+            </div>
+          </div>
+          <div className="sm:hidden justify-center text-violet-300 text-center text-base font-semibold leading-6 whitespace-nowrap items-stretch bg-slate-800 self-stretch px-7 py-5 rounded-[58px] max-md:px-5">
+            Get Started
           </div>
         </div>
       </div>
       <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0 mt-[150px] px-5 sm:px-[120px]">
+
         <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
-          <div className="flex-col overflow-hidden relative flex min-h-[261px] grow justify-center items-stretch max-md:max-w-full max-md:mt-7 rounded-xl hover:bg-slate-950">
+          <div className="flex-col overflow-hidden relative flex  grow justify-center items-stretch max-md:max-w-full max-md:mt-7 rounded-xl hover:bg-slate-950">
             <img
               loading="lazy"
               srcSet="/image/gradient4.png"
@@ -128,11 +147,11 @@ const Newsletter = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col items-stretch w-[34%] ml-5 max-md:w-full max-md:ml-0 absolute sm:static -right-40">
+                  <div className="flex flex-col items-stretch w-[34%] ml-5 max-md:w-full max-md:ml-0 absolute -right-50 right-0 ">
                     <img
                       loading="lazy"
                       src="/icons/discord.svg"
-                      className="aspect-[1.57] object-cover object-center flex flex-row justify-center items-center overflow-hidden shrink-0 max-w-full "
+                      className="aspect-[1.57] object-cover object-center w-[220px] flex flex-row justify-center items-center overflow-hidden shrink-0 max-w-full absolute right-0"
                     />
                   </div>
                 </div>
@@ -140,6 +159,7 @@ const Newsletter = () => {
             </a>
           </div>
         </div>
+
         <div className="flex flex-col items-stretch w-6/12 ml-5 max-md:w-full max-md:ml-0">
           <div className="flex-col overflow-hidden relative flex min-h-[261px] grow justify-center items-stretch max-md:max-w-full max-md:mt-7 rounded-xl hover:bg-slate-950">
             <img
@@ -147,11 +167,8 @@ const Newsletter = () => {
               src="/image/gradient4.png"
               className="absolute h-full w-full object-cover object-center inset-0"
             />
-            <a href="http://appmendinc.slack.com/" target="_blank">
-              <div
-                type
-                className="relative border pl-10 pb-11 rounded-xl border-solid border-violet-300 border-opacity-10 max-md:max-w-full max-md:pl-5 cursor-pointer"
-              >
+            <a href="http://appmendinc.slack.com/" target="_blank" className="h-full">
+              <div className="relative border pl-10 pb-11 rounded-xl border-solid border-violet-300 border-opacity-10 max-md:max-w-full max-md:pl-5 h-[100%]">
                 <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
                   <div className="flex flex-col items-stretch w-[68%] max-md:w-full max-md:ml-0">
                     <div className="relative flex flex-col mt-16 items-start max-md:mt-10">
@@ -169,11 +186,11 @@ const Newsletter = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col items-stretch w-[34%] ml-5 max-md:w-full max-md:ml-0 absolute sm:static -right-40 -top-6 ">
+                  <div className="flex flex-col items-stretch w-[34%] ml-5 max-md:w-full max-md:ml-0 absolute -right-50 right-0 ">
                     <img
                       loading="lazy"
                       src="/icons/slack.svg"
-                      className="aspect-[1.2] object-cover object-center w-[185px] justify-center items-center overflow-hidden shrink-0 max-w-full "
+                      className="aspect-[1.57] object-cover object-center  flex flex-row justify-center items-center overflow-visible shrink-0 max-w-full absolute right-0"
                     />
                   </div>
                 </div>

@@ -29,13 +29,20 @@ const Navbar = () => {
       <div id="home" className='pr-20'>
         <Image
           src='/icons/logo.svg'
-          width={80}
-          height={80}
-          alt='xmigrate' />
+          width={50}
+          height={50}
+          alt='xmigrate'
+          className='sm:w-20 sm:h-20' />
       </div >
       <div onClick={handleNav} className='lg:hidden pr-10 cursor-pointer'>
-        <AiOutlineMenu size={25} color='white' />
+      <div className={`icon-container ${menuOpen ? 'rotate' : ''}`}>
+        {menuOpen ? (
+          <AiOutlineClose size={25} color='white' />
+        ) : (
+          <AiOutlineMenu size={25} color='white' />
+        )}
       </div>
+    </div>
       <div className={
         menuOpen ? "fixed z-30 left-0 top-0 w-[80%] lg:hidden h-screen bg-gradient-to-t from-blue-500 to-purple-500 shadow-md backdrop-blur-lg backdrop-filter p-10 ease-in duration-500 bg-grad-3" : "fixed z-30 left-[-100%] top-0 bottom-0 p-10 ease-in duration-500"
       }>
@@ -88,12 +95,12 @@ const Navbar = () => {
           {/* <div className="w-[594.38px] h-[55.19px] left-0 top-0 absolute rounded-[60px] border border-indigo-300 border-opacity-10" /> */}
         </div>
       </div>
-      <div className='hidden lg:block button-hov'>
+      <div className='hidden lg:block button-hov '>
         <Link href='#contact' className="max-w-[240px] grow h-[55px] rounded-[56px] border border-indigo-300 border-opacity-20 flex flex-row items-center px-[27px] py-[17px] bg-veil">
           <div className="text-violet-300 text-base font-normal leading-tight">Get Started</div>
           <div className="w-1 h-1 bg-indigo-300 rounded mx-[10px]" />
           <>
-            <button className=" text-indigo-300 text-opacity-60 text-[15px] leading-tight">its free</button>
+            <button className="text-indigo-300 text-opacity-60 text-[15px] leading-tight">its free</button>
             {/* <div className="relative flex-col justify-start items-start inline-flex ml-1" /> */}
             <div className='svg-container'>
               <Image

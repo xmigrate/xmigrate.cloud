@@ -31,7 +31,7 @@ const Newsletter = () => {
 
   return (
     <div id="contact">
-      <div className="flex flex-col xl:flex-row justify-between gap-5 sm:items-center xs:justify-center xl:items-start max-md:flex-wrap mt-[300px] mx-5 lg:mx-[100px]">
+      <div className="flex flex-col xl:flex-row justify-between gap-5 sm:items-center xs:justify-center xl:items-start max-md:flex-wrap mt-[300px] mx-5 lg:mx-[100px] ">
         <motion.div
           ref={s1}
           initial={{ opacity: 0, x: -50 }}
@@ -40,13 +40,13 @@ const Newsletter = () => {
           className="flex grow basis-[0%] flex-col px-3"
         >
           <div className="justify-center text-5xl leading-[60px] tracking-tight bg-clip-text mt-8 max-md:text-4xl max-md:leading-[56px] text-white">
-            <span className="bg-gradient-to-b from-indigo-50 to-indigo-300 inline-block text-transparent bg-clip-text text-5xl font-bold leading-[60px] max-w-sm">
+            <span className="bg-gradient-to-b from-indigo-50 to-indigo-300 inline-block text-transparent bg-clip-text text-5xl font-bold leading-[60px] max-w-sm select-none">
               Get started with xmigrate
             </span>
           </div>
         </motion.div>
         <div className="flex grow basis-[0%] flex-col items-center mt-7 px-5 xl:self-end max-md:max-w-full">
-          <div className="justify-center text-indigo-300 text-base leading-7 tracking-wide max-md:max-w-full">
+          <div className="justify-center text-indigo-300 text-base leading-7 tracking-wide max-md:max-w-full select-none">
             Subscribe to our newsletter and become a part of our thriving <br />
             community. Get access to exclusive content.
           </div>

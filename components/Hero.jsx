@@ -72,11 +72,11 @@ const Hero = () => {
                     <div className="w-[90px] h-5 text-center text-base font-semibold leading-snug">View Demo</div>
                 </motion.a>
             </div>
-            <img
+            {/* <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/efcae1abc57e7e0218d0f6d9faf97013b90c57b679fec95e1e588df6183b6c08?"
                 className="object-contain object-center justify-center items-center overflow-hidden self-center 2xl:max-w-[1200px] mt-12 max-md:max-w-full max-md:mt-10 "
-            />
+            /> */}
             <div className="pt-16 flex-col justify-start items-center gap-10 inline-flex">
                 <div className="pl-[33.13px] pr-[32.94px] pt-1 pb-[5px] justify-center items-center inline-flex">
                     <motion.div
@@ -117,24 +117,16 @@ const Hero = () => {
                     className="max-w-3xl sm:px-3 px-2 text-center text-indigo-300 text-lg leading-[31px] tracking-wide">Our block level replication of disk enables seamless migration of any type of workloads that are running on a VM.
                 </motion.div>
             </div>
-            <motion.div
-                ref={t4}
-                initial={{ opacity: 0 }}
-                animate={elementVisible4 ? { opacity: 1 } : { opacity: 0 }}
-                transition={{ duration: 0.8 }}
-            >
-                <img src="/image/cpu.svg" className='z-10'></img>
-            </motion.div>
+            <img src="/image/cpu.svg" className='z-1'></img>
             <motion.div
                 ref={t3}
                 initial={{ opacity: 0 }}
                 animate={elementVisible3 ? { opacity: 1 } : { opacity: 0 }}
-                transition={{ duration: 0.8 }}
-                id='features' 
-                className="text-center mt-12 pt-12 pb-18 bg-gradient-to-b from-indigo-50 to-indigo-300 inline-block text-transparent bg-clip-text text-4xl sm:text-5xl font-bold leading-[50px] sm:leading-[60px] max-w-[350px] sm:max-w-4xl">Don't settle on <br className='sm:hidden block' />one cloud,<br /> have a hybrid strategy for recovery
+                transition={{ delay: 0.3, duration: 1 }}
+                id='features'
+                className="text-center mt-12 pt-12 pb-18 bg-gradient-to-b from-indigo-50 to-indigo-300 inline-block text-transparent bg-clip-text text-4xl sm:text-5xl font-bold leading-[50px] sm:leading-[60px] max-w-[350px] sm:max-w-4xl z-2">Don't settle on <br className='sm:hidden block' />one cloud,<br /> have a hybrid strategy for recovery
             </motion.div>
         </div>
-        //  </div>
         // </div>
     )
 }

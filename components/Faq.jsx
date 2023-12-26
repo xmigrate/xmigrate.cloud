@@ -38,7 +38,7 @@ const Faq = () => {
         setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
     };
     return (
-        <div className="flex justify-between gap-5 items-start max-md:flex-wrap mt-[210px] mx-1 sm:mx-[100px]">
+        <div className="flex justify-between gap-5 items-start max-md:flex-wrap mt-[210px] mx-1 sm:mx-[100px] select-none">
             <motion.div ref={s1} initial={{ opacity: 0, x: -50 }} animate={faqVisible1 ? { opacity: 1, x: 0 } : { opacity: 0 }} transition={{ duration: 0.8 }} className="flex grow basis-[0%] flex-col px-5 items-start">
                 <div className="shadow-2xl backdrop-blur-[7.5px] bg-indigo-200 bg-opacity-0 flex aspect-[1.83] flex-col justify-center items-stretch rounded-[60px]">
                     <div className="justify-center text-indigo-300 text-center text-base leading-5 tracking-wide border aspect-[1.83] items-stretch px-5 py-3 rounded-[60px] border-solid border-indigo-300 border-opacity-40 inner-shadow">

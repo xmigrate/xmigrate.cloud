@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Bottom = () => {
     return (
         <div>
-            <div className="flex justify-between gap-5 items-center max-md:flex-wrap mt-[175px]">
+            <div className="flex justify-between gap-5 items-center max-md:flex-wrap mt-[175px] select-none">
                 <div className="flex grow basis-[0%] flex-col px-5 items-start lg:pl-[120px]">
                     <div className="bg-indigo-200 bg-opacity-0 flex w-[133px] max-w-full flex-col justify-center items-stretch rounded-[60px]">
                         <div className="text-indigo-300 text-center text-base leading-5 tracking-wide whitespace-nowrap border justify-center items-stretch px-5 py-2 rounded-[60px] border-solid border-indigo-300 border-opacity-40 pl-[17px] pr-[17px] inner-shadow">
